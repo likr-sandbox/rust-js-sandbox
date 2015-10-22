@@ -519,9 +519,9 @@ then-block-2270-.i.i30.i:                         ; preds = %.noexc68
   %30 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx.val.i, i32 %arena.idx22.val.i
   %31 = icmp eq i32 %arena.idx22.val.i, 0
   %32 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx.val.i to i8*
-  br i1 %31, label %clean_ast_2287_.i.i39.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i"
+  br i1 %31, label %clean_ast_2287_.i.i39.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i": ; preds = %loop_body.backedge.i.i35.i, %then-block-2270-.i.i30.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i": ; preds = %loop_body.backedge.i.i35.i, %then-block-2270-.i.i30.i
   %.idx.val2425.i.i31.i = phi %"1.std::ffi::c_str::CString"* [ %33, %loop_body.backedge.i.i35.i ], [ %arena.idx.val.i, %then-block-2270-.i.i30.i ]
   %33 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i31.i, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i32.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i31.i, i32 0, i32 0, i32 2
@@ -529,11 +529,11 @@ then-block-2270-.i.i30.i:                         ; preds = %.noexc68
   %34 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i33.i, 0
   br i1 %34, label %loop_body.backedge.i.i35.i, label %then-block-2270-.i.i.i.i.i38.i
 
-loop_body.backedge.i.i35.i:                       ; preds = %then-block-2270-.i.i.i.i.i38.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i"
+loop_body.backedge.i.i35.i:                       ; preds = %then-block-2270-.i.i.i.i.i38.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i"
   %35 = icmp eq %"1.std::ffi::c_str::CString"* %33, %30
-  br i1 %35, label %clean_ast_2287_.i.i39.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i"
+  br i1 %35, label %clean_ast_2287_.i.i39.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i"
 
-then-block-2270-.i.i.i.i.i38.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i"
+then-block-2270-.i.i.i.i.i38.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i36.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i31.i, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i37.i = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i36.i, align 4, !noalias !16
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i37.i) #0, !noalias !19
@@ -562,9 +562,9 @@ then-block-2270-.i.i.i:                           ; preds = %unwind_ast_1812_3.i
   %39 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx24.val.i, i32 %arena.idx25.val.i
   %40 = icmp eq i32 %arena.idx25.val.i, 0
   %41 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx24.val.i to i8*
-  br i1 %40, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+  br i1 %40, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i": ; preds = %loop_body.backedge.i.i.i, %then-block-2270-.i.i.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i": ; preds = %loop_body.backedge.i.i.i, %then-block-2270-.i.i.i
   %.idx.val2425.i.i.i = phi %"1.std::ffi::c_str::CString"* [ %42, %loop_body.backedge.i.i.i ], [ %arena.idx24.val.i, %then-block-2270-.i.i.i ]
   %42 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i, i32 0, i32 0, i32 2
@@ -572,11 +572,11 @@ then-block-2270-.i.i.i:                           ; preds = %unwind_ast_1812_3.i
   %43 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i.i, 0
   br i1 %43, label %loop_body.backedge.i.i.i, label %then-block-2270-.i.i.i.i.i.i
 
-loop_body.backedge.i.i.i:                         ; preds = %then-block-2270-.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+loop_body.backedge.i.i.i:                         ; preds = %then-block-2270-.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
   %44 = icmp eq %"1.std::ffi::c_str::CString"* %42, %39
-  br i1 %44, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+  br i1 %44, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
 
-then-block-2270-.i.i.i.i.i.i:                     ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+then-block-2270-.i.i.i.i.i.i:                     ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i.i64 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i.i65 = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i.i64, align 4, !noalias !26
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i.i65) #0, !noalias !29
@@ -635,14 +635,14 @@ then-block-456-.i.i.i.i.i.i.i:                    ; preds = %then-block-1089-.i.
   %53 = getelementptr inbounds { i8*, void (i8*)** }* %tmp.sroa.0.0.copyload.i.i.i.i, i32 %tmp.sroa.6.0.copyload.i.i.i.i
   %54 = icmp eq i32 %tmp.sroa.6.0.copyload.i.i.i.i, 0
   %55 = bitcast { i8*, void (i8*)** }* %tmp.sroa.0.0.copyload.i.i.i.i to i8*
-  br i1 %54, label %clean_ast_473_.i.i.i.i.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i"
+  br i1 %54, label %clean_ast_473_.i.i.i.i.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i": ; preds = %then-block-456-.i.i.i.i.i.i.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i": ; preds = %then-block-456-.i.i.i.i.i.i.i
   %56 = bitcast i64* %5 to i8*
-  br label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i"
+  br label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i": ; preds = %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i", %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i"
-  %.idx.val1920.i.i.i.i.i.i.i = phi { i8*, void (i8*)** }* [ %tmp.sroa.0.0.copyload.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i" ], [ %57, %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i" ]
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i": ; preds = %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i", %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i"
+  %.idx.val1920.i.i.i.i.i.i.i = phi { i8*, void (i8*)** }* [ %tmp.sroa.0.0.copyload.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i" ], [ %57, %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i" ]
   %57 = getelementptr inbounds { i8*, void (i8*)** }* %.idx.val1920.i.i.i.i.i.i.i, i32 1
   call void @llvm.lifetime.start(i64 8, i8* %56), !noalias !43
   %58 = bitcast { i8*, void (i8*)** }* %.idx.val1920.i.i.i.i.i.i.i to i64*
@@ -652,7 +652,7 @@ then-block-456-.i.i.i.i.i.i.i:                    ; preds = %then-block-1089-.i.
   %60 = icmp eq i32 %trunc.i.i.i.i.i.i.i, 0
   br i1 %60, label %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i", label %cond.i.i.i.i.i.i.i.i
 
-cond.i.i.i.i.i.i.i.i:                             ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i"
+cond.i.i.i.i.i.i.i.i:                             ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i"
   %61 = lshr i64 %59, 32
   %62 = trunc i64 %61 to i32
   %63 = inttoptr i32 %62 to void (i8*)**
@@ -660,10 +660,10 @@ cond.i.i.i.i.i.i.i.i:                             ; preds = %"_ZN5slice36Iter$LT
   call void %64(i8* %56), !noalias !43
   br label %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i"
 
-"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i": ; preds = %cond.i.i.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i"
+"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i": ; preds = %cond.i.i.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i"
   call void @llvm.lifetime.end(i64 8, i8* %56), !noalias !43
   %65 = icmp eq { i8*, void (i8*)** }* %57, %53
-  br i1 %65, label %clean_ast_473_.i.i.i.i.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i"
+  br i1 %65, label %clean_ast_473_.i.i.i.i.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i"
 
 clean_ast_473_.i.i.i.i.i.i.i:                     ; preds = %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i", %then-block-456-.i.i.i.i.i.i.i
   call void @free(i8* %55) #0, !noalias !43
@@ -948,14 +948,14 @@ then-block-456-.i.i.i.i.i.i.i25:                  ; preds = %then-block-1089-.i.
   %111 = getelementptr inbounds { i8*, void (i8*)** }* %tmp.sroa.0.0.copyload.i.i.i.i19, i32 %tmp.sroa.6.0.copyload.i.i.i.i21
   %112 = icmp eq i32 %tmp.sroa.6.0.copyload.i.i.i.i21, 0
   %113 = bitcast { i8*, void (i8*)** }* %tmp.sroa.0.0.copyload.i.i.i.i19 to i8*
-  br i1 %112, label %clean_ast_473_.i.i.i.i.i.i.i32, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i26"
+  br i1 %112, label %clean_ast_473_.i.i.i.i.i.i.i32, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i26"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i26": ; preds = %then-block-456-.i.i.i.i.i.i.i25
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i26": ; preds = %then-block-456-.i.i.i.i.i.i.i25
   %114 = bitcast i64* %4 to i8*
-  br label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i29"
+  br label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i29"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i29": ; preds = %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i31", %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i26"
-  %.idx.val1920.i.i.i.i.i.i.i27 = phi { i8*, void (i8*)** }* [ %tmp.sroa.0.0.copyload.i.i.i.i19, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i26" ], [ %115, %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i31" ]
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i29": ; preds = %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i31", %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i26"
+  %.idx.val1920.i.i.i.i.i.i.i27 = phi { i8*, void (i8*)** }* [ %tmp.sroa.0.0.copyload.i.i.i.i19, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i26" ], [ %115, %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i31" ]
   %115 = getelementptr inbounds { i8*, void (i8*)** }* %.idx.val1920.i.i.i.i.i.i.i27, i32 1
   call void @llvm.lifetime.start(i64 8, i8* %114), !noalias !97
   %116 = bitcast { i8*, void (i8*)** }* %.idx.val1920.i.i.i.i.i.i.i27 to i64*
@@ -965,7 +965,7 @@ then-block-456-.i.i.i.i.i.i.i25:                  ; preds = %then-block-1089-.i.
   %118 = icmp eq i32 %trunc.i.i.i.i.i.i.i28, 0
   br i1 %118, label %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i31", label %cond.i.i.i.i.i.i.i.i30
 
-cond.i.i.i.i.i.i.i.i30:                           ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i29"
+cond.i.i.i.i.i.i.i.i30:                           ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i29"
   %119 = lshr i64 %117, 32
   %120 = trunc i64 %119 to i32
   %121 = inttoptr i32 %120 to void (i8*)**
@@ -973,10 +973,10 @@ cond.i.i.i.i.i.i.i.i30:                           ; preds = %"_ZN5slice36Iter$LT
   call void %122(i8* %114), !noalias !97
   br label %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i31"
 
-"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i31": ; preds = %cond.i.i.i.i.i.i.i.i30, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i29"
+"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i31": ; preds = %cond.i.i.i.i.i.i.i.i30, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i29"
   call void @llvm.lifetime.end(i64 8, i8* %114), !noalias !97
   %123 = icmp eq { i8*, void (i8*)** }* %115, %111
-  br i1 %123, label %clean_ast_473_.i.i.i.i.i.i.i32, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i29"
+  br i1 %123, label %clean_ast_473_.i.i.i.i.i.i.i32, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i29"
 
 clean_ast_473_.i.i.i.i.i.i.i32:                   ; preds = %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i31", %then-block-456-.i.i.i.i.i.i.i25
   call void @free(i8* %113) #0, !noalias !97
@@ -1059,14 +1059,14 @@ then-block-456-.i.i.i.i.i.i.i48:                  ; preds = %then-block-1089-.i.
   %146 = getelementptr inbounds { i8*, void (i8*)** }* %tmp.sroa.0.0.copyload.i.i.i.i42, i32 %tmp.sroa.6.0.copyload.i.i.i.i44
   %147 = icmp eq i32 %tmp.sroa.6.0.copyload.i.i.i.i44, 0
   %148 = bitcast { i8*, void (i8*)** }* %tmp.sroa.0.0.copyload.i.i.i.i42 to i8*
-  br i1 %147, label %clean_ast_473_.i.i.i.i.i.i.i55, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i49"
+  br i1 %147, label %clean_ast_473_.i.i.i.i.i.i.i55, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i49"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i49": ; preds = %then-block-456-.i.i.i.i.i.i.i48
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i49": ; preds = %then-block-456-.i.i.i.i.i.i.i48
   %149 = bitcast i64* %3 to i8*
-  br label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i52"
+  br label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i52"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i52": ; preds = %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i54", %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i49"
-  %.idx.val1920.i.i.i.i.i.i.i50 = phi { i8*, void (i8*)** }* [ %tmp.sroa.0.0.copyload.i.i.i.i42, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.lr.ph.i.i.i.i.i.i.i49" ], [ %150, %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i54" ]
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i52": ; preds = %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i54", %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i49"
+  %.idx.val1920.i.i.i.i.i.i.i50 = phi { i8*, void (i8*)** }* [ %tmp.sroa.0.0.copyload.i.i.i.i42, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.lr.ph.i.i.i.i.i.i.i49" ], [ %150, %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i54" ]
   %150 = getelementptr inbounds { i8*, void (i8*)** }* %.idx.val1920.i.i.i.i.i.i.i50, i32 1
   call void @llvm.lifetime.start(i64 8, i8* %149), !noalias !124
   %151 = bitcast { i8*, void (i8*)** }* %.idx.val1920.i.i.i.i.i.i.i50 to i64*
@@ -1076,7 +1076,7 @@ then-block-456-.i.i.i.i.i.i.i48:                  ; preds = %then-block-1089-.i.
   %153 = icmp eq i32 %trunc.i.i.i.i.i.i.i51, 0
   br i1 %153, label %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i54", label %cond.i.i.i.i.i.i.i.i53
 
-cond.i.i.i.i.i.i.i.i53:                           ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i52"
+cond.i.i.i.i.i.i.i.i53:                           ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i52"
   %154 = lshr i64 %152, 32
   %155 = trunc i64 %154 to i32
   %156 = inttoptr i32 %155 to void (i8*)**
@@ -1084,10 +1084,10 @@ cond.i.i.i.i.i.i.i.i53:                           ; preds = %"_ZN5slice36Iter$LT
   call void %157(i8* %149), !noalias !124
   br label %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i54"
 
-"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i54": ; preds = %cond.i.i.i.i.i.i.i.i53, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i52"
+"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i54": ; preds = %cond.i.i.i.i.i.i.i.i53, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i52"
   call void @llvm.lifetime.end(i64 8, i8* %149), !noalias !124
   %158 = icmp eq { i8*, void (i8*)** }* %150, %146
-  br i1 %158, label %clean_ast_473_.i.i.i.i.i.i.i55, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h14287280908777769160E.exit.i.i.i.i.i.i.i52"
+  br i1 %158, label %clean_ast_473_.i.i.i.i.i.i.i55, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5639315273421375925E.exit.i.i.i.i.i.i.i52"
 
 clean_ast_473_.i.i.i.i.i.i.i55:                   ; preds = %"_ZN53Box$LT$core..ops..FnMut$LP$webplatform..Event$RP$$GT$14glue_drop.164617he34af29bc0faed96E.exit.i.i.i.i.i.i.i54", %then-block-456-.i.i.i.i.i.i.i48
   call void @free(i8* %148) #0, !noalias !124
@@ -2514,9 +2514,9 @@ then-block-2270-.i.i30.i:                         ; preds = %.noexc15
   %26 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx.val.i5, i32 %arena.idx22.val.i
   %27 = icmp eq i32 %arena.idx22.val.i, 0
   %28 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx.val.i5 to i8*
-  br i1 %27, label %clean_ast_2287_.i.i39.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i"
+  br i1 %27, label %clean_ast_2287_.i.i39.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i": ; preds = %loop_body.backedge.i.i35.i, %then-block-2270-.i.i30.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i": ; preds = %loop_body.backedge.i.i35.i, %then-block-2270-.i.i30.i
   %.idx.val2425.i.i31.i = phi %"1.std::ffi::c_str::CString"* [ %29, %loop_body.backedge.i.i35.i ], [ %arena.idx.val.i5, %then-block-2270-.i.i30.i ]
   %29 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i31.i, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i32.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i31.i, i32 0, i32 0, i32 2
@@ -2524,11 +2524,11 @@ then-block-2270-.i.i30.i:                         ; preds = %.noexc15
   %30 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i33.i, 0
   br i1 %30, label %loop_body.backedge.i.i35.i, label %then-block-2270-.i.i.i.i.i38.i
 
-loop_body.backedge.i.i35.i:                       ; preds = %then-block-2270-.i.i.i.i.i38.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i"
+loop_body.backedge.i.i35.i:                       ; preds = %then-block-2270-.i.i.i.i.i38.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i"
   %31 = icmp eq %"1.std::ffi::c_str::CString"* %29, %26
-  br i1 %31, label %clean_ast_2287_.i.i39.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i"
+  br i1 %31, label %clean_ast_2287_.i.i39.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i"
 
-then-block-2270-.i.i.i.i.i38.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i34.i"
+then-block-2270-.i.i.i.i.i38.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i34.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i36.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i31.i, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i37.i = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i36.i, align 4, !noalias !403
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i37.i) #0, !noalias !406
@@ -2557,9 +2557,9 @@ then-block-2270-.i.i.i:                           ; preds = %unwind_ast_1623_3.i
   %35 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx24.val.i, i32 %arena.idx25.val.i
   %36 = icmp eq i32 %arena.idx25.val.i, 0
   %37 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx24.val.i to i8*
-  br i1 %36, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+  br i1 %36, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i": ; preds = %loop_body.backedge.i.i.i10, %then-block-2270-.i.i.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i": ; preds = %loop_body.backedge.i.i.i10, %then-block-2270-.i.i.i
   %.idx.val2425.i.i.i7 = phi %"1.std::ffi::c_str::CString"* [ %38, %loop_body.backedge.i.i.i10 ], [ %arena.idx24.val.i, %then-block-2270-.i.i.i ]
   %38 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i7, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i.i8 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i7, i32 0, i32 0, i32 2
@@ -2567,11 +2567,11 @@ then-block-2270-.i.i.i:                           ; preds = %unwind_ast_1623_3.i
   %39 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i.i9, 0
   br i1 %39, label %loop_body.backedge.i.i.i10, label %then-block-2270-.i.i.i.i.i.i
 
-loop_body.backedge.i.i.i10:                       ; preds = %then-block-2270-.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+loop_body.backedge.i.i.i10:                       ; preds = %then-block-2270-.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
   %40 = icmp eq %"1.std::ffi::c_str::CString"* %38, %35
-  br i1 %40, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+  br i1 %40, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
 
-then-block-2270-.i.i.i.i.i.i:                     ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+then-block-2270-.i.i.i.i.i.i:                     ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i.i11 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i7, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i.i12 = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i.i11, align 4, !noalias !413
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i.i12) #0, !noalias !416
@@ -2618,9 +2618,9 @@ then-block-2270-.i.i34.i:                         ; preds = %unwind_ast_517_2.i
   %52 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx28.val.i, i32 %arena.idx29.val.i
   %53 = icmp eq i32 %arena.idx29.val.i, 0
   %54 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx28.val.i to i8*
-  br i1 %53, label %clean_ast_2287_.i.i43.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i38.i"
+  br i1 %53, label %clean_ast_2287_.i.i43.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i38.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i38.i": ; preds = %loop_body.backedge.i.i39.i, %then-block-2270-.i.i34.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i38.i": ; preds = %loop_body.backedge.i.i39.i, %then-block-2270-.i.i34.i
   %.idx.val2425.i.i35.i = phi %"1.std::ffi::c_str::CString"* [ %55, %loop_body.backedge.i.i39.i ], [ %arena.idx28.val.i, %then-block-2270-.i.i34.i ]
   %55 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i35.i, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i36.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i35.i, i32 0, i32 0, i32 2
@@ -2628,11 +2628,11 @@ then-block-2270-.i.i34.i:                         ; preds = %unwind_ast_517_2.i
   %56 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i37.i, 0
   br i1 %56, label %loop_body.backedge.i.i39.i, label %then-block-2270-.i.i.i.i.i42.i
 
-loop_body.backedge.i.i39.i:                       ; preds = %then-block-2270-.i.i.i.i.i42.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i38.i"
+loop_body.backedge.i.i39.i:                       ; preds = %then-block-2270-.i.i.i.i.i42.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i38.i"
   %57 = icmp eq %"1.std::ffi::c_str::CString"* %55, %52
-  br i1 %57, label %clean_ast_2287_.i.i43.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i38.i"
+  br i1 %57, label %clean_ast_2287_.i.i43.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i38.i"
 
-then-block-2270-.i.i.i.i.i42.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i38.i"
+then-block-2270-.i.i.i.i.i42.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i38.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i40.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i35.i, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i41.i = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i40.i, align 4, !noalias !432
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i41.i) #0, !noalias !435
@@ -2661,9 +2661,9 @@ then-block-2270-.i.i.i22:                         ; preds = %.noexc35
   %61 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx.val.i20, i32 %arena.idx26.val.i21
   %62 = icmp eq i32 %arena.idx26.val.i21, 0
   %63 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx.val.i20 to i8*
-  br i1 %62, label %clean_ast_2287_.i.i.i33, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i27"
+  br i1 %62, label %clean_ast_2287_.i.i.i33, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i27"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i27": ; preds = %loop_body.backedge.i.i.i28, %then-block-2270-.i.i.i22
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i27": ; preds = %loop_body.backedge.i.i.i28, %then-block-2270-.i.i.i22
   %.idx.val2425.i.i.i24 = phi %"1.std::ffi::c_str::CString"* [ %64, %loop_body.backedge.i.i.i28 ], [ %arena.idx.val.i20, %then-block-2270-.i.i.i22 ]
   %64 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i24, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i.i25 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i24, i32 0, i32 0, i32 2
@@ -2671,11 +2671,11 @@ then-block-2270-.i.i.i22:                         ; preds = %.noexc35
   %65 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i.i26, 0
   br i1 %65, label %loop_body.backedge.i.i.i28, label %then-block-2270-.i.i.i.i.i.i31
 
-loop_body.backedge.i.i.i28:                       ; preds = %then-block-2270-.i.i.i.i.i.i31, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i27"
+loop_body.backedge.i.i.i28:                       ; preds = %then-block-2270-.i.i.i.i.i.i31, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i27"
   %66 = icmp eq %"1.std::ffi::c_str::CString"* %64, %61
-  br i1 %66, label %clean_ast_2287_.i.i.i33, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i27"
+  br i1 %66, label %clean_ast_2287_.i.i.i33, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i27"
 
-then-block-2270-.i.i.i.i.i.i31:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i27"
+then-block-2270-.i.i.i.i.i.i31:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i27"
   %tmp.sroa.0.0..sroa_idx.i.i.i.i29 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i24, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i.i30 = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i.i29, align 4, !noalias !442
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i.i30) #0, !noalias !445
@@ -2735,9 +2735,9 @@ then-block-320-.i.i264:                           ; preds = %_ZN22mithril..core.
   %79 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i.i261, i32 %.idx15.val.i.i263
   %80 = icmp eq i32 %.idx15.val.i.i263, 0
   %81 = bitcast %"10.mithril::mithril::core::Node"* %.idx.val.i.i261 to i8*
-  br i1 %80, label %clean_ast_337_.i.i272, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i265"
+  br i1 %80, label %clean_ast_337_.i.i272, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i265"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i265": ; preds = %then-block-320-.i.i264
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i265": ; preds = %then-block-320-.i.i264
   %82 = bitcast %"10.mithril::mithril::core::Node"* %8 to i8*
   %83 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %8, i32 0, i32 0
   %84 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %8, i32 0, i32 2, i32 4
@@ -2747,8 +2747,8 @@ then-block-320-.i.i264:                           ; preds = %_ZN22mithril..core.
   %88 = bitcast i32* %87 to i8**
   br label %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit41
 
-_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit41: ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i271, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i265"
-  %.idx.val.i45.i266 = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i.i261, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i265" ], [ %89, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i271 ]
+_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit41: ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i271, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i265"
+  %.idx.val.i45.i266 = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i.i261, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i265" ], [ %89, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i271 ]
   %89 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i266, i32 1
   %.sroa.0116.0..sroa_idx = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i266, i32 0, i32 0
   %.sroa.0116.0.copyload = load i32* %.sroa.0116.0..sroa_idx, align 4
@@ -2888,17 +2888,17 @@ then-block-320-.i.i:                              ; preds = %_ZN22mithril..core.
   %114 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i.i, i32 %.idx15.val.i.i
   %115 = icmp eq i32 %.idx15.val.i.i, 0
   %116 = bitcast %"10.mithril::mithril::core::Node"* %.idx.val.i.i to i8*
-  br i1 %115, label %clean_ast_337_.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i"
+  br i1 %115, label %clean_ast_337_.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i": ; preds = %then-block-320-.i.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i": ; preds = %then-block-320-.i.i
   %117 = bitcast %"10.mithril::mithril::core::Node"* %7 to i8*
   %118 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %7, i32 0, i32 0
   %119 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %7, i32 0, i32 2
   %120 = bitcast [8 x i32]* %119 to %"10.mithril::mithril::core::Element"*
   br label %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit114
 
-_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit114: ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i"
-  %.idx.val.i45.i = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i" ], [ %121, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i ]
+_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit114: ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i"
+  %.idx.val.i45.i = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i" ], [ %121, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i ]
   %121 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i, i32 1
   %.sroa.033.0..sroa_idx = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i, i32 0, i32 0
   %.sroa.033.0.copyload = load i32* %.sroa.033.0..sroa_idx, align 4
@@ -3089,20 +3089,20 @@ cond.i115:                                        ; preds = %clean_custom_.i108,
   %168 = icmp eq i32 %arg7.sroa.6.0.copyload, 0
   br i1 %168, label %clean_ast_170_, label %loop_body.i.i
 
-loop_body.i.i:                                    ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i", %cond.i115
-  %169 = phi { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* [ %170, %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i" ], [ %164, %cond.i115 ]
-  %170 = phi { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* [ %172, %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i" ], [ %166, %cond.i115 ]
+loop_body.i.i:                                    ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i", %cond.i115
+  %169 = phi { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* [ %170, %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i" ], [ %164, %cond.i115 ]
+  %170 = phi { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* [ %172, %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i" ], [ %166, %cond.i115 ]
   %171 = icmp eq { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* %170, %135
-  br i1 %171, label %clean_ast_1139_.i.i, label %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i"
+  br i1 %171, label %clean_ast_1139_.i.i, label %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i"
 
-"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i": ; preds = %loop_body.i.i
+"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i": ; preds = %loop_body.i.i
   %172 = getelementptr inbounds { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* %169, i32 2
   %.sroa.0.0..sroa_idx.i.i = getelementptr inbounds { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* %170, i32 0, i32 0, i32 0
   %.sroa.0.0.copyload.i.i = load i8** %.sroa.0.0..sroa_idx.i.i, align 4, !noalias !495
   %173 = icmp eq i8* %.sroa.0.0.copyload.i.i, null
   br i1 %173, label %clean_ast_1139_.i.i, label %loop_body.i.i
 
-clean_ast_1139_.i.i:                              ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i", %loop_body.i.i
+clean_ast_1139_.i.i:                              ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i", %loop_body.i.i
   %174 = bitcast { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* %arg7.sroa.0.0.copyload to i8*
   call void @free(i8* %174) #0, !noalias !495
   br label %clean_ast_170_
@@ -3153,9 +3153,9 @@ then-block-320-.i.i.i125:                         ; preds = %unwind_ast_1231_3.i
   %183 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx4.val.i, i32 %arena.idx5.val.i
   %184 = icmp eq i32 %arena.idx5.val.i, 0
   %185 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx4.val.i to i8*
-  br i1 %184, label %clean_ast_337_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i.i"
+  br i1 %184, label %clean_ast_337_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i.i": ; preds = %loop_body.backedge.i.i.i, %then-block-320-.i.i.i125
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i.i": ; preds = %loop_body.backedge.i.i.i, %then-block-320-.i.i.i125
   %.idx.val2425.i.i.i = phi %"1.std::ffi::c_str::CString"* [ %186, %loop_body.backedge.i.i.i ], [ %arena.idx4.val.i, %then-block-320-.i.i.i125 ]
   %186 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i, i32 0, i32 0, i32 2
@@ -3163,11 +3163,11 @@ then-block-320-.i.i.i125:                         ; preds = %unwind_ast_1231_3.i
   %187 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i.i, 0
   br i1 %187, label %loop_body.backedge.i.i.i, label %then-block-320-.i.i.i.i.i.i
 
-loop_body.backedge.i.i.i:                         ; preds = %then-block-320-.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i.i"
+loop_body.backedge.i.i.i:                         ; preds = %then-block-320-.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i.i"
   %188 = icmp eq %"1.std::ffi::c_str::CString"* %186, %183
-  br i1 %188, label %clean_ast_337_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i.i"
+  br i1 %188, label %clean_ast_337_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i.i"
 
-then-block-320-.i.i.i.i.i.i:                      ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i.i"
+then-block-320-.i.i.i.i.i.i:                      ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i.i = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i.i, align 4, !noalias !512
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i.i) #0, !noalias !515
@@ -3187,7 +3187,7 @@ normal-return9.i:                                 ; preds = %normal-return2.i
   call void @llvm.lifetime.end(i64 8, i8* %140), !noalias !498
   %190 = load i8** %141, align 4, !noalias !507, !alias.scope !508
   %191 = ptrtoint i8* %190 to i32
-  %192 = invoke i32 (i8*, ...)* @emscripten_asm_const_int(i8* %189, i32 %179, i32 %180, i32 1, i32 ptrtoint (void (i8*, i8*, i32)* @_ZN11rust_caller21h12562514537742350249E to i32), i32 %191)
+  %192 = invoke i32 (i8*, ...)* @emscripten_asm_const_int(i8* %189, i32 %179, i32 %180, i32 1, i32 ptrtoint (void (i8*, i8*, i32)* @_ZN11rust_caller20h7226687047207284522E to i32), i32 %191)
           to label %.noexc unwind label %unwind_custom_11.loopexit
 
 .noexc:                                           ; preds = %normal-return9.i
@@ -3201,9 +3201,9 @@ then-block-320-.i.i15.i:                          ; preds = %.noexc
   %194 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx.val.i, i32 %arena.idx2.val.i
   %195 = icmp eq i32 %arena.idx2.val.i, 0
   %196 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx.val.i to i8*
-  br i1 %195, label %clean_ast_337_.i.i24.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i19.i"
+  br i1 %195, label %clean_ast_337_.i.i24.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i19.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i19.i": ; preds = %loop_body.backedge.i.i20.i, %then-block-320-.i.i15.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i19.i": ; preds = %loop_body.backedge.i.i20.i, %then-block-320-.i.i15.i
   %.idx.val2425.i.i16.i = phi %"1.std::ffi::c_str::CString"* [ %197, %loop_body.backedge.i.i20.i ], [ %arena.idx.val.i, %then-block-320-.i.i15.i ]
   %197 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i16.i, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i17.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i16.i, i32 0, i32 0, i32 2
@@ -3211,11 +3211,11 @@ then-block-320-.i.i15.i:                          ; preds = %.noexc
   %198 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i18.i, 0
   br i1 %198, label %loop_body.backedge.i.i20.i, label %then-block-320-.i.i.i.i.i23.i
 
-loop_body.backedge.i.i20.i:                       ; preds = %then-block-320-.i.i.i.i.i23.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i19.i"
+loop_body.backedge.i.i20.i:                       ; preds = %then-block-320-.i.i.i.i.i23.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i19.i"
   %199 = icmp eq %"1.std::ffi::c_str::CString"* %197, %194
-  br i1 %199, label %clean_ast_337_.i.i24.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i19.i"
+  br i1 %199, label %clean_ast_337_.i.i24.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i19.i"
 
-then-block-320-.i.i.i.i.i23.i:                    ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h6440916584799723188E.exit.i.i19.i"
+then-block-320-.i.i.i.i.i23.i:                    ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next21h15237244470770566711E.exit.i.i19.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i21.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i16.i, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i22.i = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i21.i, align 4, !noalias !522
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i22.i) #0, !noalias !525
@@ -3300,7 +3300,7 @@ normal-return8.i.i:                               ; preds = %then-block-1634-.i.
 normal-return12.i.i:                              ; preds = %normal-return7.i.i
   %220 = getelementptr inbounds %"5.alloc::rc::RcBox<core::cell::RefCell<collections::vec::Vec<Box<core::ops::FnMut(webplatform::Event)>>>>"* %.idx.val.i, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0
   %221 = load { i8*, void (i8*)** }** %220, align 4, !noalias !538, !alias.scope !541
-  %222 = call fastcc { i8*, void (i8*)** }* @_ZN3vec16alloc_or_realloc20h7374066198504229268E({ i8*, void (i8*)** }* %221, i32 %216, i32 %218), !noalias !543
+  %222 = call fastcc { i8*, void (i8*)** }* @_ZN3vec16alloc_or_realloc21h14978797671657044064E({ i8*, void (i8*)** }* %221, i32 %216, i32 %218), !noalias !543
   %223 = icmp eq { i8*, void (i8*)** }* %222, null
   br i1 %223, label %then-block-1672-.i.i, label %normal-return16.i.i
 
@@ -3390,9 +3390,9 @@ then-block-2270-.i.i41.i:                         ; preds = %unwind_ast_1072_2.i
   %244 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx35.val.i, i32 %arena.idx36.val.i
   %245 = icmp eq i32 %arena.idx36.val.i, 0
   %246 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx35.val.i to i8*
-  br i1 %245, label %clean_ast_2287_.i.i50.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i45.i"
+  br i1 %245, label %clean_ast_2287_.i.i50.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i45.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i45.i": ; preds = %loop_body.backedge.i.i46.i, %then-block-2270-.i.i41.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i45.i": ; preds = %loop_body.backedge.i.i46.i, %then-block-2270-.i.i41.i
   %.idx.val2425.i.i42.i = phi %"1.std::ffi::c_str::CString"* [ %247, %loop_body.backedge.i.i46.i ], [ %arena.idx35.val.i, %then-block-2270-.i.i41.i ]
   %247 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i42.i, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i43.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i42.i, i32 0, i32 0, i32 2
@@ -3400,11 +3400,11 @@ then-block-2270-.i.i41.i:                         ; preds = %unwind_ast_1072_2.i
   %248 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i44.i, 0
   br i1 %248, label %loop_body.backedge.i.i46.i, label %then-block-2270-.i.i.i.i.i49.i
 
-loop_body.backedge.i.i46.i:                       ; preds = %then-block-2270-.i.i.i.i.i49.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i45.i"
+loop_body.backedge.i.i46.i:                       ; preds = %then-block-2270-.i.i.i.i.i49.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i45.i"
   %249 = icmp eq %"1.std::ffi::c_str::CString"* %247, %244
-  br i1 %249, label %clean_ast_2287_.i.i50.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i45.i"
+  br i1 %249, label %clean_ast_2287_.i.i50.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i45.i"
 
-then-block-2270-.i.i.i.i.i49.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i45.i"
+then-block-2270-.i.i.i.i.i49.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i45.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i47.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i42.i, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i48.i = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i47.i, align 4, !noalias !566
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i48.i) #0, !noalias !569
@@ -3441,9 +3441,9 @@ then-block-2270-.i.i.i113:                        ; preds = %.noexc126
   %253 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx.val.i111, i32 %arena.idx33.val.i
   %254 = icmp eq i32 %arena.idx33.val.i, 0
   %255 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx.val.i111 to i8*
-  br i1 %254, label %clean_ast_2287_.i.i.i124, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i118"
+  br i1 %254, label %clean_ast_2287_.i.i.i124, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i118"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i118": ; preds = %loop_body.backedge.i.i.i119, %then-block-2270-.i.i.i113
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i118": ; preds = %loop_body.backedge.i.i.i119, %then-block-2270-.i.i.i113
   %.idx.val2425.i.i.i115 = phi %"1.std::ffi::c_str::CString"* [ %256, %loop_body.backedge.i.i.i119 ], [ %arena.idx.val.i111, %then-block-2270-.i.i.i113 ]
   %256 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i115, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i.i116 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i115, i32 0, i32 0, i32 2
@@ -3451,11 +3451,11 @@ then-block-2270-.i.i.i113:                        ; preds = %.noexc126
   %257 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i.i117, 0
   br i1 %257, label %loop_body.backedge.i.i.i119, label %then-block-2270-.i.i.i.i.i.i122
 
-loop_body.backedge.i.i.i119:                      ; preds = %then-block-2270-.i.i.i.i.i.i122, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i118"
+loop_body.backedge.i.i.i119:                      ; preds = %then-block-2270-.i.i.i.i.i.i122, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i118"
   %258 = icmp eq %"1.std::ffi::c_str::CString"* %256, %253
-  br i1 %258, label %clean_ast_2287_.i.i.i124, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i118"
+  br i1 %258, label %clean_ast_2287_.i.i.i124, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i118"
 
-then-block-2270-.i.i.i.i.i.i122:                  ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i118"
+then-block-2270-.i.i.i.i.i.i122:                  ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i118"
   %tmp.sroa.0.0..sroa_idx.i.i.i.i120 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i115, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i.i121 = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i.i120, align 4, !noalias !576
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i.i121) #0, !noalias !579
@@ -3481,19 +3481,19 @@ cond.i132:                                        ; preds = %normal-return10, %l
   %261 = icmp eq i32 %arg7.sroa.6.0.copyload, 0
   br i1 %261, label %normal-return32, label %loop_body.i.i135
 
-loop_body.i.i135:                                 ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i138", %cond.i132
-  %262 = phi { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* [ %264, %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i138" ], [ %260, %cond.i132 ]
+loop_body.i.i135:                                 ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i138", %cond.i132
+  %262 = phi { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* [ %264, %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i138" ], [ %260, %cond.i132 ]
   %263 = icmp eq { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* %262, %135
-  br i1 %263, label %clean_ast_1139_.i.i139, label %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i138"
+  br i1 %263, label %clean_ast_1139_.i.i139, label %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i138"
 
-"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i138": ; preds = %loop_body.i.i135
+"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i138": ; preds = %loop_body.i.i135
   %264 = getelementptr inbounds { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* %262, i32 1
   %.sroa.0.0..sroa_idx.i.i136 = getelementptr inbounds { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* %262, i32 0, i32 0, i32 0
   %.sroa.0.0.copyload.i.i137 = load i8** %.sroa.0.0..sroa_idx.i.i136, align 4, !noalias !586
   %265 = icmp eq i8* %.sroa.0.0.copyload.i.i137, null
   br i1 %265, label %clean_ast_1139_.i.i139, label %loop_body.i.i135
 
-clean_ast_1139_.i.i139:                           ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h9756862115509403688E.exit.i.i138", %loop_body.i.i135
+clean_ast_1139_.i.i139:                           ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next17h5520590859296550E.exit.i.i138", %loop_body.i.i135
   %266 = bitcast { %str_slice, %"10.mithril::mithril::core::AttributeValue" }* %arg7.sroa.0.0.copyload to i8*
   call void @free(i8* %266) #0, !noalias !586
   br label %normal-return32
@@ -3661,17 +3661,17 @@ then-block-320-.i.i249:                           ; preds = %_ZN22mithril..core.
   %304 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i.i246, i32 %.idx15.val.i.i248
   %305 = icmp eq i32 %.idx15.val.i.i248, 0
   %306 = bitcast %"10.mithril::mithril::core::Node"* %.idx.val.i.i246 to i8*
-  br i1 %305, label %clean_ast_337_.i.i257, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i250"
+  br i1 %305, label %clean_ast_337_.i.i257, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i250"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i250": ; preds = %then-block-320-.i.i249
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i250": ; preds = %then-block-320-.i.i249
   %307 = bitcast %"10.mithril::mithril::core::Node"* %2 to i8*
   %308 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %2, i32 0, i32 0
   %309 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %2, i32 0, i32 2
   %310 = bitcast [8 x i32]* %309 to %"10.mithril::mithril::core::Element"*
   br label %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit351
 
-_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit351: ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i256, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i250"
-  %.idx.val.i45.i251 = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i.i246, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i250" ], [ %311, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i256 ]
+_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit351: ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i256, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i250"
+  %.idx.val.i45.i251 = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i.i246, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i250" ], [ %311, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i256 ]
   %311 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i251, i32 1
   %.sroa.088.0..sroa_idx = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i251, i32 0, i32 0
   %.sroa.088.0.copyload = load i32* %.sroa.088.0..sroa_idx, align 4
@@ -3777,9 +3777,9 @@ then-block-320-.i.i279:                           ; preds = %_ZN22mithril..core.
   %334 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i.i276, i32 %.idx15.val.i.i278
   %335 = icmp eq i32 %.idx15.val.i.i278, 0
   %336 = bitcast %"10.mithril::mithril::core::Node"* %.idx.val.i.i276 to i8*
-  br i1 %335, label %clean_ast_337_.i.i287, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i280"
+  br i1 %335, label %clean_ast_337_.i.i287, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i280"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i280": ; preds = %then-block-320-.i.i279
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i280": ; preds = %then-block-320-.i.i279
   %337 = bitcast %"10.mithril::mithril::core::Node"* %4 to i8*
   %338 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %4, i32 0, i32 0
   %339 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %4, i32 0, i32 2, i32 4
@@ -3789,8 +3789,8 @@ then-block-320-.i.i279:                           ; preds = %_ZN22mithril..core.
   %343 = bitcast i32* %342 to i8**
   br label %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit172
 
-_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit172: ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i286, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i280"
-  %.idx.val.i45.i281 = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i.i276, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph.i280" ], [ %344, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i286 ]
+_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit172: ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i286, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i280"
+  %.idx.val.i45.i281 = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i.i276, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph.i280" ], [ %344, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i286 ]
   %344 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i281, i32 1
   %.sroa.0168.0..sroa_idx = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i281, i32 0, i32 0
   %.sroa.0168.0.copyload = load i32* %.sroa.0168.0..sroa_idx, align 4
@@ -3918,7 +3918,7 @@ entry-block:
   %2 = getelementptr inbounds %"3.collections::vec::Vec<mithril::mithril::core::Node>"* %0, i32 0, i32 2
   %3 = load i32* %2, align 4, !alias.scope !658
   %4 = icmp eq i32 %3, 0
-  br i1 %4, label %"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E.exit", label %then-block-320-.i
+  br i1 %4, label %"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E.exit", label %then-block-320-.i
 
 then-block-320-.i:                                ; preds = %entry-block
   %.idx.i = getelementptr %"3.collections::vec::Vec<mithril::mithril::core::Node>"* %0, i32 0, i32 0, i32 0, i32 0
@@ -3929,23 +3929,23 @@ then-block-320-.i:                                ; preds = %entry-block
   %6 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i, i32 %.idx15.val.i
   %7 = icmp eq i32 %.idx15.val.i, 0
   %8 = bitcast %"10.mithril::mithril::core::Node"* %.idx.val.i to i8*
-  br i1 %7, label %clean_ast_337_.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph"
+  br i1 %7, label %clean_ast_337_.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph": ; preds = %then-block-320-.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph": ; preds = %then-block-320-.i
   %9 = bitcast %"10.mithril::mithril::core::Node"* %1 to i8*
   %10 = bitcast %"10.mithril::mithril::core::Node"* %tmp.i.i to i8*
   %11 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %1, i32 0, i32 0
   %12 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %1, i32 0, i32 2
   %13 = bitcast [8 x i32]* %12 to %"10.mithril::mithril::core::Element"*
-  br label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i"
+  br label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i": ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph"
-  %.idx.val.i45 = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.lr.ph" ], [ %14, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i ]
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i": ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph"
+  %.idx.val.i45 = phi %"10.mithril::mithril::core::Node"* [ %.idx.val.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.lr.ph" ], [ %14, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i ]
   %14 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45, i32 1
   %15 = icmp eq %"10.mithril::mithril::core::Node"* %.idx.val.i45, null
   br i1 %15, label %clean_ast_337_.i, label %match_case.i
 
-match_case.i:                                     ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i"
+match_case.i:                                     ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i"
   call void @llvm.lifetime.start(i64 36, i8* %9) #0, !noalias !658
   call void @llvm.lifetime.start(i64 36, i8* %10) #0, !noalias !661
   %16 = bitcast %"10.mithril::mithril::core::Node"* %.idx.val.i45 to i8*
@@ -3965,13 +3965,13 @@ enum-iter-variant-1.i.i:                          ; preds = %match_case.i
 _ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i: ; preds = %enum-iter-variant-1.i.i, %match_case.i
   call void @llvm.lifetime.end(i64 36, i8* %9) #0, !noalias !658
   %18 = icmp eq %"10.mithril::mithril::core::Node"* %14, %6
-  br i1 %18, label %clean_ast_337_.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i"
+  br i1 %18, label %clean_ast_337_.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i"
 
-clean_ast_337_.i:                                 ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i", %then-block-320-.i
+clean_ast_337_.i:                                 ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i", %then-block-320-.i
   call void @free(i8* %8) #0, !noalias !658
-  br label %"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E.exit"
+  br label %"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E.exit"
 
-"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E.exit": ; preds = %clean_ast_337_.i, %entry-block
+"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E.exit": ; preds = %clean_ast_337_.i, %entry-block
   ret void
 }
 
@@ -3996,7 +3996,7 @@ then-block-320-.i.i:                              ; preds = %entry-block
   ret void
 }
 
-define internal void @_ZN11rust_caller21h12562514537742350249E(i8* nocapture readnone, i8*, i32) unnamed_addr {
+define internal void @_ZN11rust_caller20h7226687047207284522E(i8* nocapture readnone, i8*, i32) unnamed_addr {
 "the block":
   %3 = alloca %"8.webplatform::Event", align 8
   %4 = bitcast i8* %0 to %"2.core::marker::PhantomData<(&'static str, mithril::mithril::core::AttributeValue)>"*
@@ -4007,7 +4007,7 @@ define internal void @_ZN11rust_caller21h12562514537742350249E(i8* nocapture rea
 
 then-block-1550-.i:                               ; preds = %"the block"
   call void @llvm.memcpy.p0i8.p0i8.i32(i8* %5, i8* bitcast ({ i32, [12 x i8] }* @const85708 to i8*), i32 16, i32 8, i1 false)
-  br label %_ZN11rust_caller10__rust_abi21h12562514537742350249E.exit
+  br label %_ZN11rust_caller10__rust_abi20h7226687047207284522E.exit
 
 else-block.i:                                     ; preds = %"the block"
   %7 = getelementptr inbounds %"8.webplatform::Event"* %3, i32 0, i32 0, i32 2, i32 0
@@ -4020,16 +4020,16 @@ else-block.i:                                     ; preds = %"the block"
   store i8 1, i8* %11, align 4
   %12 = getelementptr inbounds %"8.webplatform::Event"* %3, i32 0, i32 0, i32 0
   store i32 1, i32* %12, align 8
-  br label %_ZN11rust_caller10__rust_abi21h12562514537742350249E.exit
+  br label %_ZN11rust_caller10__rust_abi20h7226687047207284522E.exit
 
-_ZN11rust_caller10__rust_abi21h12562514537742350249E.exit: ; preds = %else-block.i, %then-block-1550-.i
+_ZN11rust_caller10__rust_abi20h7226687047207284522E.exit: ; preds = %else-block.i, %then-block-1550-.i
   call void @_ZN7mithril6render6render12closure.2046E(%"2.core::marker::PhantomData<(&'static str, mithril::mithril::core::AttributeValue)>"* noalias %4, %"8.webplatform::Event"* noalias nocapture dereferenceable(16) %3)
   call void @llvm.lifetime.end(i64 16, i8* %5)
   ret void
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define internal fastcc noalias { i8*, void (i8*)** }* @_ZN3vec16alloc_or_realloc20h7374066198504229268E({ i8*, void (i8*)** }* nocapture, i32, i32) unnamed_addr #2 {
+define internal fastcc noalias { i8*, void (i8*)** }* @_ZN3vec16alloc_or_realloc21h14978797671657044064E({ i8*, void (i8*)** }* nocapture, i32, i32) unnamed_addr #2 {
 entry-block:
   %3 = icmp eq i32 %1, 0
   br i1 %3, label %then-block-1961-, label %else-block
@@ -4123,15 +4123,15 @@ then-block-320-.i.i50.i:                          ; preds = %_ZN22mithril..core.
   %25 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %tmp.sroa.8.0.copyload.i.i.i.i, i32 %tmp.sroa.10.0.copyload.i.i.i.i
   %26 = icmp eq i32 %tmp.sroa.10.0.copyload.i.i.i.i, 0
   %27 = bitcast %"10.mithril::mithril::core::Node"* %tmp.sroa.8.0.copyload.i.i.i.i to i8*
-  br i1 %26, label %clean_ast_337_.i.i58.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i53.i"
+  br i1 %26, label %clean_ast_337_.i.i58.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i53.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i53.i": ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i57.i, %then-block-320-.i.i50.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i53.i": ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i57.i, %then-block-320-.i.i50.i
   %.idx.val.i45.i52.i = phi %"10.mithril::mithril::core::Node"* [ %28, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i57.i ], [ %tmp.sroa.8.0.copyload.i.i.i.i, %then-block-320-.i.i50.i ]
   %28 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i52.i, i32 1
   %29 = icmp eq %"10.mithril::mithril::core::Node"* %.idx.val.i45.i52.i, null
   br i1 %29, label %clean_ast_337_.i.i58.i, label %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit
 
-_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit: ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i53.i"
+_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit: ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i53.i"
   %tmp.i.i.i45.i.sroa.0.0..sroa_idx = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i52.i, i32 0, i32 0
   %tmp.i.i.i45.i.sroa.552.0..sroa_idx53 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i52.i, i32 0, i32 2, i32 2
   %tmp.i.i.i45.i.sroa.552.0..sroa_cast54 = bitcast i32* %tmp.i.i.i45.i.sroa.552.0..sroa_idx53 to i8**
@@ -4166,15 +4166,15 @@ then-block-320-.i.i:                              ; preds = %_ZN22mithril..core.
   %33 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.sroa.6.0.copyload, i32 %.sroa.7.0.copyload
   %34 = icmp eq i32 %.sroa.7.0.copyload, 0
   %35 = bitcast %"10.mithril::mithril::core::Node"* %.sroa.6.0.copyload to i8*
-  br i1 %34, label %clean_ast_337_.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i"
+  br i1 %34, label %clean_ast_337_.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i": ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i, %then-block-320-.i.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i": ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i, %then-block-320-.i.i
   %.idx.val.i45.i = phi %"10.mithril::mithril::core::Node"* [ %36, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i ], [ %.sroa.6.0.copyload, %then-block-320-.i.i ]
   %36 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i, i32 1
   %37 = icmp eq %"10.mithril::mithril::core::Node"* %.idx.val.i45.i, null
   br i1 %37, label %clean_ast_337_.i.i, label %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit6
 
-_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit6: ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i"
+_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit6: ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i"
   %.sroa.0.0..sroa_idx = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i, i32 0, i32 0
   %.sroa.0.0.copyload12 = load i32* %.sroa.0.0..sroa_idx, align 4
   %.sroa.417.0..sroa_idx18 = getelementptr inbounds %"10.mithril::mithril::core::Node"* %.idx.val.i45.i, i32 0, i32 2, i32 2
@@ -4245,17 +4245,17 @@ clean_ast_337_.i.i7:                              ; preds = %_ZN19mithril..core.
 
 _ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i: ; preds = %clean_ast_337_.i.i7, %_ZN22mithril..core..Element14glue_drop.183517h3aea98d1871baac6E.exit, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit6
   %49 = icmp eq %"10.mithril::mithril::core::Node"* %36, %33
-  br i1 %49, label %clean_ast_337_.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i"
+  br i1 %49, label %clean_ast_337_.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i"
 
-clean_ast_337_.i.i:                               ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i", %then-block-320-.i.i
+clean_ast_337_.i.i:                               ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i", %then-block-320-.i.i
   tail call void @free(i8* %35) #0, !noalias !696
   br label %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i57.i
 
 _ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i57.i: ; preds = %clean_ast_337_.i.i, %_ZN22mithril..core..Element14glue_drop.183517h3aea98d1871baac6E.exit71.i, %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit
   %50 = icmp eq %"10.mithril::mithril::core::Node"* %28, %25
-  br i1 %50, label %clean_ast_337_.i.i58.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i53.i"
+  br i1 %50, label %clean_ast_337_.i.i58.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i53.i"
 
-clean_ast_337_.i.i58.i:                           ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i57.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h5727514522934324261E.exit.i.i53.i", %then-block-320-.i.i50.i
+clean_ast_337_.i.i58.i:                           ; preds = %_ZN19mithril..core..Node14glue_drop.183217h91e7d2b5b1608d66E.exit.i.i57.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h8744271511465808861E.exit.i.i53.i", %then-block-320-.i.i50.i
   tail call void @free(i8* %27) #0, !noalias !701
   br label %loop_body.backedge.i
 
@@ -4379,9 +4379,9 @@ then-block-2270-.i.i36.i:                         ; preds = %unwind_ast_1162_2.i
   %30 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx30.val.i, i32 %arena.idx31.val.i
   %31 = icmp eq i32 %arena.idx31.val.i, 0
   %32 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx30.val.i to i8*
-  br i1 %31, label %clean_ast_2287_.i.i45.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i40.i"
+  br i1 %31, label %clean_ast_2287_.i.i45.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i40.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i40.i": ; preds = %loop_body.backedge.i.i41.i, %then-block-2270-.i.i36.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i40.i": ; preds = %loop_body.backedge.i.i41.i, %then-block-2270-.i.i36.i
   %.idx.val2425.i.i37.i = phi %"1.std::ffi::c_str::CString"* [ %33, %loop_body.backedge.i.i41.i ], [ %arena.idx30.val.i, %then-block-2270-.i.i36.i ]
   %33 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i37.i, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i38.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i37.i, i32 0, i32 0, i32 2
@@ -4389,11 +4389,11 @@ then-block-2270-.i.i36.i:                         ; preds = %unwind_ast_1162_2.i
   %34 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i39.i, 0
   br i1 %34, label %loop_body.backedge.i.i41.i, label %then-block-2270-.i.i.i.i.i44.i
 
-loop_body.backedge.i.i41.i:                       ; preds = %then-block-2270-.i.i.i.i.i44.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i40.i"
+loop_body.backedge.i.i41.i:                       ; preds = %then-block-2270-.i.i.i.i.i44.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i40.i"
   %35 = icmp eq %"1.std::ffi::c_str::CString"* %33, %30
-  br i1 %35, label %clean_ast_2287_.i.i45.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i40.i"
+  br i1 %35, label %clean_ast_2287_.i.i45.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i40.i"
 
-then-block-2270-.i.i.i.i.i44.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i40.i"
+then-block-2270-.i.i.i.i.i44.i:                   ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i40.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i42.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i37.i, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i43.i = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i42.i, align 4, !noalias !721
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i43.i) #0, !noalias !724
@@ -4422,9 +4422,9 @@ then-block-2270-.i.i.i:                           ; preds = %.noexc
   %39 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %arena.idx.val.i, i32 %arena.idx28.val.i
   %40 = icmp eq i32 %arena.idx28.val.i, 0
   %41 = bitcast %"1.std::ffi::c_str::CString"* %arena.idx.val.i to i8*
-  br i1 %40, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+  br i1 %40, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
 
-"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i": ; preds = %loop_body.backedge.i.i.i, %then-block-2270-.i.i.i
+"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i": ; preds = %loop_body.backedge.i.i.i, %then-block-2270-.i.i.i
   %.idx.val2425.i.i.i = phi %"1.std::ffi::c_str::CString"* [ %42, %loop_body.backedge.i.i.i ], [ %arena.idx.val.i, %then-block-2270-.i.i.i ]
   %42 = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i, i32 1
   %tmp.sroa.69.0..sroa_idx10.i.i.i.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i, i32 0, i32 0, i32 2
@@ -4432,11 +4432,11 @@ then-block-2270-.i.i.i:                           ; preds = %.noexc
   %43 = icmp eq i32 %tmp.sroa.69.0.copyload.i.i.i.i, 0
   br i1 %43, label %loop_body.backedge.i.i.i, label %then-block-2270-.i.i.i.i.i.i
 
-loop_body.backedge.i.i.i:                         ; preds = %then-block-2270-.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+loop_body.backedge.i.i.i:                         ; preds = %then-block-2270-.i.i.i.i.i.i, %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
   %44 = icmp eq %"1.std::ffi::c_str::CString"* %42, %39
-  br i1 %44, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+  br i1 %44, label %clean_ast_2287_.i.i.i, label %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
 
-then-block-2270-.i.i.i.i.i.i:                     ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2820471980388305866E.exit.i.i.i"
+then-block-2270-.i.i.i.i.i.i:                     ; preds = %"_ZN5slice36Iter$LT$$u27$a$C$$u20$T$GT$.Iterator4next20h2325431166871589108E.exit.i.i.i"
   %tmp.sroa.0.0..sroa_idx.i.i.i.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %.idx.val2425.i.i.i, i32 0, i32 0, i32 0, i32 0, i32 0
   %tmp.sroa.0.0.copyload.i.i.i.i = load i8** %tmp.sroa.0.0..sroa_idx.i.i.i.i, align 4, !noalias !731
   call void @free(i8* %tmp.sroa.0.0.copyload.i.i.i.i) #0, !noalias !734
@@ -4476,7 +4476,7 @@ _ZN3ffi5c_str4CStr8to_bytes20h99fff1232be60fa7ffcE.exit.i: ; preds = %"_ZN53coll
   %51 = load i32* %50, align 8, !range !168, !noalias !746, !alias.scope !749
   %cond.i.i = icmp eq i32 %51, 0
   %52 = getelementptr inbounds %"2.core::result::Result<&'static str, core::str::Utf8Error>"* %7, i32 0, i32 2
-  br i1 %cond.i.i, label %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h7050245684417201500E.exit.i", label %match_else.i.i
+  br i1 %cond.i.i, label %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h8326417104446216042E.exit.i", label %match_else.i.i
 
 match_else.i.i:                                   ; preds = %_ZN3ffi5c_str4CStr8to_bytes20h99fff1232be60fa7ffcE.exit.i
   %53 = bitcast i64* %e.i.i to i8*
@@ -4510,7 +4510,7 @@ match_else.i.i:                                   ; preds = %_ZN3ffi5c_str4CStr8
 .noexc2:                                          ; preds = %match_else.i.i
   unreachable
 
-"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h7050245684417201500E.exit.i": ; preds = %_ZN3ffi5c_str4CStr8to_bytes20h99fff1232be60fa7ffcE.exit.i
+"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h8326417104446216042E.exit.i": ; preds = %_ZN3ffi5c_str4CStr8to_bytes20h99fff1232be60fa7ffcE.exit.i
   %65 = bitcast [2 x i32]* %52 to i64*
   %66 = load i64* %65, align 4, !noalias !746, !alias.scope !749
   call void @llvm.lifetime.end(i64 12, i8* %45), !noalias !746, !alias.scope !749
@@ -4520,7 +4520,7 @@ match_else.i.i:                                   ; preds = %_ZN3ffi5c_str4CStr8
   %67 = icmp eq i32 %.sroa.3.0.extract.trunc.i.i.i.i.i.i, 0
   br i1 %67, label %normal-return6, label %"_ZN6option15Option$LT$T$GT$6expect21h12911472860368883434E.exit.i14.i.i.i"
 
-"_ZN6option15Option$LT$T$GT$6expect21h12911472860368883434E.exit.i14.i.i.i": ; preds = %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h7050245684417201500E.exit.i"
+"_ZN6option15Option$LT$T$GT$6expect21h12911472860368883434E.exit.i14.i.i.i": ; preds = %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h8326417104446216042E.exit.i"
   %68 = call i8* @malloc(i32 %.sroa.3.0.extract.trunc.i.i.i.i.i.i), !noalias !763
   %69 = icmp eq i8* %68, null
   br i1 %69, label %then-block-29627-.i.i.i.i, label %match_case.lr.ph.i.i.i.i.i
@@ -4615,9 +4615,9 @@ _ZN21webplatform..HtmlNode14glue_drop.190217hda01b99f9a05cacdE.exit: ; preds = %
   call void @llvm.lifetime.end(i64 12, i8* %13)
   br label %"_ZN30_$LP$webplatform..Event$C$$RP$14glue_drop.223317h822896eb4cd72e52E.exit39"
 
-normal-return6:                                   ; preds = %"_ZN5slice21_$u5b$T$u5d$.SliceExt6to_vec20h2212035382561452202E.exit.loopexit.i.i.i", %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h7050245684417201500E.exit.i"
-  %vector.i.sroa.0.0..idx.val.i.i.i5064.i.i.i = phi i32 [ 1, %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h7050245684417201500E.exit.i" ], [ %74, %"_ZN5slice21_$u5b$T$u5d$.SliceExt6to_vec20h2212035382561452202E.exit.loopexit.i.i.i" ]
-  %vector.i.sroa.15.0.copyload5463.i.i.i = phi i32 [ 0, %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h7050245684417201500E.exit.i" ], [ %.sroa.3.0.extract.trunc.i.i.i.i.i.i, %"_ZN5slice21_$u5b$T$u5d$.SliceExt6to_vec20h2212035382561452202E.exit.loopexit.i.i.i" ]
+normal-return6:                                   ; preds = %"_ZN5slice21_$u5b$T$u5d$.SliceExt6to_vec20h2212035382561452202E.exit.loopexit.i.i.i", %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h8326417104446216042E.exit.i"
+  %vector.i.sroa.0.0..idx.val.i.i.i5064.i.i.i = phi i32 [ 1, %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h8326417104446216042E.exit.i" ], [ %74, %"_ZN5slice21_$u5b$T$u5d$.SliceExt6to_vec20h2212035382561452202E.exit.loopexit.i.i.i" ]
+  %vector.i.sroa.15.0.copyload5463.i.i.i = phi i32 [ 0, %"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h8326417104446216042E.exit.i" ], [ %.sroa.3.0.extract.trunc.i.i.i.i.i.i, %"_ZN5slice21_$u5b$T$u5d$.SliceExt6to_vec20h2212035382561452202E.exit.loopexit.i.i.i" ]
   %.sroa.05.0..sroa_cast7.i.i = bitcast %"1.std::ffi::c_str::CString"* %11 to i32*
   store i32 %vector.i.sroa.0.0..idx.val.i.i.i5064.i.i.i, i32* %.sroa.05.0..sroa_cast7.i.i, align 8, !noalias !793, !alias.scope !794
   %.sroa.5.0..sroa_idx10.i.i = getelementptr inbounds %"1.std::ffi::c_str::CString"* %11, i32 0, i32 0, i32 1
@@ -4853,12 +4853,12 @@ then-block-132942-.i.i.i.i.i:                     ; preds = %unwind_ast_131650_.
   %31 = inttoptr i32 %bytes.i.sroa.0.0.copyload38 to i8*
   %32 = getelementptr inbounds i8* %31, i32 %bytes.i.sroa.9.0.copyload44
   %33 = icmp eq i32 %bytes.i.sroa.9.0.copyload44, 0
-  br i1 %33, label %match_else.i, label %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h8752370590166270320E.exit.i.i"
+  br i1 %33, label %match_else.i, label %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next21h14111809301176426828E.exit.i.i"
 
 clean_custom_.i.body:                             ; preds = %then-block-132942-.i.i7.i, %unwind_custom_.i1
   resume { i8*, i32 } %46
 
-"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h8752370590166270320E.exit.i.i": ; preds = %next-block.i.i, %"_ZN3ffi5c_str29_$RF$$u27$a$u20$str.IntoBytes10into_bytes20h3a43585f07900467hicE.exit"
+"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next21h14111809301176426828E.exit.i.i": ; preds = %next-block.i.i, %"_ZN3ffi5c_str29_$RF$$u27$a$u20$str.IntoBytes10into_bytes20h3a43585f07900467hicE.exit"
   %34 = phi i8* [ %35, %next-block.i.i ], [ %31, %"_ZN3ffi5c_str29_$RF$$u27$a$u20$str.IntoBytes10into_bytes20h3a43585f07900467hicE.exit" ]
   %i.04.i.i = phi i32 [ %37, %next-block.i.i ], [ 0, %"_ZN3ffi5c_str29_$RF$$u27$a$u20$str.IntoBytes10into_bytes20h3a43585f07900467hicE.exit" ]
   %35 = getelementptr inbounds i8* %34, i32 1
@@ -4866,10 +4866,10 @@ clean_custom_.i.body:                             ; preds = %then-block-132942-.
   %36 = icmp eq i8 %.val.i.i, 0
   br i1 %36, label %normal-return5.i, label %next-block.i.i
 
-next-block.i.i:                                   ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h8752370590166270320E.exit.i.i"
+next-block.i.i:                                   ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next21h14111809301176426828E.exit.i.i"
   %37 = add i32 %i.04.i.i, 1
   %38 = icmp eq i8* %35, %32
-  br i1 %38, label %match_else.i, label %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h8752370590166270320E.exit.i.i"
+  br i1 %38, label %match_else.i, label %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next21h14111809301176426828E.exit.i.i"
 
 match_else.i:                                     ; preds = %next-block.i.i, %"_ZN3ffi5c_str29_$RF$$u27$a$u20$str.IntoBytes10into_bytes20h3a43585f07900467hicE.exit"
   %39 = icmp eq i32 %bytes.i.sroa.9.0.copyload44, %bytes.i.sroa.11.0.copyload50
@@ -4928,7 +4928,7 @@ _ZN25std..ffi..c_str..NulError14glue_drop.460017h0a9b26e2aded044cE.exit.i: ; pre
   call void @llvm.lifetime.end(i64 20, i8* %5), !noalias !892, !alias.scope !900
   resume { i8*, i32 } %47
 
-normal-return5.i:                                 ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next20h8752370590166270320E.exit.i.i"
+normal-return5.i:                                 ; preds = %"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next21h14111809301176426828E.exit.i.i"
   %51 = getelementptr inbounds %"2.core::result::Result<std::ffi::c_str::CString, std::ffi::c_str::NulError>"* %4, i32 0, i32 2, i32 0
   store i32 %i.04.i.i, i32* %51, align 4, !noalias !901, !alias.scope !902
   %bytes.i.sroa.0.0..sroa_idx = getelementptr inbounds %"2.core::result::Result<std::ffi::c_str::CString, std::ffi::c_str::NulError>"* %4, i32 0, i32 2, i32 1
@@ -5021,7 +5021,7 @@ normal-return8.i:                                 ; preds = %then-block-3099-.i
 normal-return12.i:                                ; preds = %normal-return7.i28
   %77 = getelementptr inbounds %"3.collections::vec::Vec<std::ffi::c_str::CString>"* %1, i32 0, i32 0, i32 0, i32 0
   %78 = load %"1.std::ffi::c_str::CString"** %77, align 4, !noalias !918, !alias.scope !921
-  %79 = call fastcc %"1.std::ffi::c_str::CString"* @_ZN3vec16alloc_or_realloc20h5599857994191473566E(%"1.std::ffi::c_str::CString"* %78, i32 %73, i32 %75)
+  %79 = call fastcc %"1.std::ffi::c_str::CString"* @_ZN3vec16alloc_or_realloc20h6304321993136652552E(%"1.std::ffi::c_str::CString"* %78, i32 %73, i32 %75)
   %80 = icmp eq %"1.std::ffi::c_str::CString"* %79, null
   br i1 %80, label %then-block-3137-.i, label %normal-return16.i
 
@@ -5069,7 +5069,7 @@ define i32 @syscall(i32) unnamed_addr #3 {
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define internal fastcc noalias %"1.std::ffi::c_str::CString"* @_ZN3vec16alloc_or_realloc20h5599857994191473566E(%"1.std::ffi::c_str::CString"* nocapture, i32, i32) unnamed_addr #2 {
+define internal fastcc noalias %"1.std::ffi::c_str::CString"* @_ZN3vec16alloc_or_realloc20h6304321993136652552E(%"1.std::ffi::c_str::CString"* nocapture, i32, i32) unnamed_addr #2 {
 entry-block:
   %3 = icmp eq i32 %1, 0
   br i1 %3, label %then-block-3374-, label %else-block
@@ -14937,90 +14937,90 @@ attributes #14 = { cold noinline noreturn nounwind uwtable }
 attributes #15 = { noinline uwtable }
 
 !0 = metadata !{metadata !1}
-!1 = metadata !{metadata !1, metadata !2, metadata !"_ZN2rc11Rc$LT$T$GT$3new19h181347797146666269E: argument 0"}
-!2 = metadata !{metadata !2, metadata !"_ZN2rc11Rc$LT$T$GT$3new19h181347797146666269E"}
+!1 = metadata !{metadata !1, metadata !2, metadata !"_ZN2rc11Rc$LT$T$GT$3new21h17209296370696335303E: argument 0"}
+!2 = metadata !{metadata !2, metadata !"_ZN2rc11Rc$LT$T$GT$3new21h17209296370696335303E"}
 !3 = metadata !{metadata !4, metadata !6, metadata !7}
 !4 = metadata !{metadata !4, metadata !5, metadata !"_ZN22Document$LT$$u27$a$GT$13element_query20hb33880850e7799485CaE: argument 0"}
 !5 = metadata !{metadata !5, metadata !"_ZN22Document$LT$$u27$a$GT$13element_query20hb33880850e7799485CaE"}
 !6 = metadata !{metadata !6, metadata !5, metadata !"_ZN22Document$LT$$u27$a$GT$13element_query20hb33880850e7799485CaE: argument 1"}
 !7 = metadata !{metadata !7, metadata !5, metadata !"_ZN22Document$LT$$u27$a$GT$13element_query20hb33880850e7799485CaE: argument 2"}
 !8 = metadata !{metadata !9, metadata !11}
-!9 = metadata !{metadata !9, metadata !10, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E: argument 0"}
-!10 = metadata !{metadata !10, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E"}
-!11 = metadata !{metadata !11, metadata !12, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E: argument 0"}
-!12 = metadata !{metadata !12, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E"}
+!9 = metadata !{metadata !9, metadata !10, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E: argument 0"}
+!10 = metadata !{metadata !10, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E"}
+!11 = metadata !{metadata !11, metadata !12, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E: argument 0"}
+!12 = metadata !{metadata !12, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E"}
 !13 = metadata !{metadata !14}
-!14 = metadata !{metadata !14, metadata !15, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!15 = metadata !{metadata !15, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!14 = metadata !{metadata !14, metadata !15, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!15 = metadata !{metadata !15, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !16 = metadata !{metadata !17, metadata !14, metadata !4, metadata !7}
-!17 = metadata !{metadata !17, metadata !18, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!18 = metadata !{metadata !18, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!17 = metadata !{metadata !17, metadata !18, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!18 = metadata !{metadata !18, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !19 = metadata !{metadata !20, metadata !14, metadata !4, metadata !7}
-!20 = metadata !{metadata !20, metadata !21, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!21 = metadata !{metadata !21, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!20 = metadata !{metadata !20, metadata !21, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!21 = metadata !{metadata !21, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !22 = metadata !{metadata !14, metadata !4, metadata !7}
 !23 = metadata !{metadata !24}
-!24 = metadata !{metadata !24, metadata !25, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!25 = metadata !{metadata !25, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!24 = metadata !{metadata !24, metadata !25, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!25 = metadata !{metadata !25, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !26 = metadata !{metadata !27, metadata !24, metadata !4, metadata !7}
-!27 = metadata !{metadata !27, metadata !28, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!28 = metadata !{metadata !28, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!27 = metadata !{metadata !27, metadata !28, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!28 = metadata !{metadata !28, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !29 = metadata !{metadata !30, metadata !24, metadata !4, metadata !7}
-!30 = metadata !{metadata !30, metadata !31, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!31 = metadata !{metadata !31, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!30 = metadata !{metadata !30, metadata !31, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!31 = metadata !{metadata !31, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !32 = metadata !{metadata !24, metadata !4, metadata !7}
 !33 = metadata !{metadata !34, metadata !36}
-!34 = metadata !{metadata !34, metadata !35, metadata !"_ZN6option15Option$LT$T$GT$6unwrap20h7517113385052465854E: argument 0"}
-!35 = metadata !{metadata !35, metadata !"_ZN6option15Option$LT$T$GT$6unwrap20h7517113385052465854E"}
-!36 = metadata !{metadata !36, metadata !35, metadata !"_ZN6option15Option$LT$T$GT$6unwrap20h7517113385052465854E: argument 1"}
+!34 = metadata !{metadata !34, metadata !35, metadata !"_ZN6option15Option$LT$T$GT$6unwrap20h3708098999104172672E: argument 0"}
+!35 = metadata !{metadata !35, metadata !"_ZN6option15Option$LT$T$GT$6unwrap20h3708098999104172672E"}
+!36 = metadata !{metadata !36, metadata !35, metadata !"_ZN6option15Option$LT$T$GT$6unwrap20h3708098999104172672E: argument 1"}
 !37 = metadata !{metadata !38}
-!38 = metadata !{metadata !38, metadata !39, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h15599483003625122699E: argument 0"}
-!39 = metadata !{metadata !39, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h15599483003625122699E"}
+!38 = metadata !{metadata !38, metadata !39, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h10910309927599754569E: argument 0"}
+!39 = metadata !{metadata !39, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h10910309927599754569E"}
 !40 = metadata !{metadata !41, metadata !38}
-!41 = metadata !{metadata !41, metadata !42, metadata !"_ZN3ptr4read21h12916105987666707909E: argument 0"}
-!42 = metadata !{metadata !42, metadata !"_ZN3ptr4read21h12916105987666707909E"}
+!41 = metadata !{metadata !41, metadata !42, metadata !"_ZN3ptr4read20h2473164448670815799E: argument 0"}
+!42 = metadata !{metadata !42, metadata !"_ZN3ptr4read20h2473164448670815799E"}
 !43 = metadata !{metadata !44, metadata !38}
-!44 = metadata !{metadata !44, metadata !45, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h16583594005103159273E: argument 0"}
-!45 = metadata !{metadata !45, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h16583594005103159273E"}
+!44 = metadata !{metadata !44, metadata !45, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11977126655231889660E: argument 0"}
+!45 = metadata !{metadata !45, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11977126655231889660E"}
 !46 = metadata !{metadata !47, metadata !44, metadata !38}
-!47 = metadata !{metadata !47, metadata !48, metadata !"_ZN3ptr4read21h10838214936033180117E: argument 0"}
-!48 = metadata !{metadata !48, metadata !"_ZN3ptr4read21h10838214936033180117E"}
+!47 = metadata !{metadata !47, metadata !48, metadata !"_ZN3ptr4read21h14531584688819262931E: argument 0"}
+!48 = metadata !{metadata !48, metadata !"_ZN3ptr4read21h14531584688819262931E"}
 !49 = metadata !{metadata !47}
 !50 = metadata !{metadata !51, metadata !53, metadata !55}
 !51 = metadata !{metadata !51, metadata !52, metadata !"_ZN36Main.Component$LT$MainController$GT$10controller20h13aca277fcc787c4vaaE: argument 0"}
 !52 = metadata !{metadata !52, metadata !"_ZN36Main.Component$LT$MainController$GT$10controller20h13aca277fcc787c4vaaE"}
-!53 = metadata !{metadata !53, metadata !54, metadata !"_ZN7mithril6render5mount21h10726206362645082393E: argument 0"}
-!54 = metadata !{metadata !54, metadata !"_ZN7mithril6render5mount21h10726206362645082393E"}
-!55 = metadata !{metadata !55, metadata !54, metadata !"_ZN7mithril6render5mount21h10726206362645082393E: argument 1"}
+!53 = metadata !{metadata !53, metadata !54, metadata !"_ZN7mithril6render5mount21h15161564093228977830E: argument 0"}
+!54 = metadata !{metadata !54, metadata !"_ZN7mithril6render5mount21h15161564093228977830E"}
+!55 = metadata !{metadata !55, metadata !54, metadata !"_ZN7mithril6render5mount21h15161564093228977830E: argument 1"}
 !56 = metadata !{metadata !57, metadata !59, metadata !53, metadata !55}
 !57 = metadata !{metadata !57, metadata !58, metadata !"_ZN36Main.Component$LT$MainController$GT$4view20hd19bf8ecd9f17cacEaaE: argument 0"}
 !58 = metadata !{metadata !58, metadata !"_ZN36Main.Component$LT$MainController$GT$4view20hd19bf8ecd9f17cacEaaE"}
 !59 = metadata !{metadata !59, metadata !58, metadata !"_ZN36Main.Component$LT$MainController$GT$4view20hd19bf8ecd9f17cacEaaE: argument 1"}
 !60 = metadata !{metadata !61, metadata !57, metadata !59, metadata !53, metadata !55}
-!61 = metadata !{metadata !61, metadata !62, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h18272079279866459308E: argument 0"}
-!62 = metadata !{metadata !62, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h18272079279866459308E"}
+!61 = metadata !{metadata !61, metadata !62, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h15937518823586235297E: argument 0"}
+!62 = metadata !{metadata !62, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h15937518823586235297E"}
 !63 = metadata !{metadata !64, metadata !57, metadata !59, metadata !53, metadata !55}
-!64 = metadata !{metadata !64, metadata !65, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h10686922720079576522E: argument 0"}
-!65 = metadata !{metadata !65, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h10686922720079576522E"}
+!64 = metadata !{metadata !64, metadata !65, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h16403082991324229897E: argument 0"}
+!65 = metadata !{metadata !65, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h16403082991324229897E"}
 !66 = metadata !{metadata !53, metadata !55}
 !67 = metadata !{metadata !68, metadata !57, metadata !59, metadata !53, metadata !55}
-!68 = metadata !{metadata !68, metadata !69, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h10686922720079576522E: argument 0"}
-!69 = metadata !{metadata !69, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h10686922720079576522E"}
+!68 = metadata !{metadata !68, metadata !69, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h16403082991324229897E: argument 0"}
+!69 = metadata !{metadata !69, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h16403082991324229897E"}
 !70 = metadata !{metadata !71, metadata !57, metadata !59, metadata !53, metadata !55}
-!71 = metadata !{metadata !71, metadata !72, metadata !"_ZN5boxed12Box$LT$T$GT$3new20h7535770029588441384E: argument 0"}
-!72 = metadata !{metadata !72, metadata !"_ZN5boxed12Box$LT$T$GT$3new20h7535770029588441384E"}
+!71 = metadata !{metadata !71, metadata !72, metadata !"_ZN5boxed12Box$LT$T$GT$3new20h4839441187561840946E: argument 0"}
+!72 = metadata !{metadata !72, metadata !"_ZN5boxed12Box$LT$T$GT$3new20h4839441187561840946E"}
 !73 = metadata !{metadata !74, metadata !57, metadata !59, metadata !53, metadata !55}
-!74 = metadata !{metadata !74, metadata !75, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h16709234970049691506E: argument 0"}
-!75 = metadata !{metadata !75, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h16709234970049691506E"}
+!74 = metadata !{metadata !74, metadata !75, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h10505542615342421135E: argument 0"}
+!75 = metadata !{metadata !75, metadata !"_ZN5boxed12Box$LT$T$GT$3new21h10505542615342421135E"}
 !76 = metadata !{i8 0, i8 2}
 !77 = metadata !{metadata !78}
 !78 = metadata !{metadata !78, metadata !79, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE: argument 0"}
 !79 = metadata !{metadata !79, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE"}
 !80 = metadata !{metadata !81, metadata !78}
-!81 = metadata !{metadata !81, metadata !82, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 1"}
-!82 = metadata !{metadata !82, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E"}
+!81 = metadata !{metadata !81, metadata !82, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 1"}
+!82 = metadata !{metadata !82, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E"}
 !83 = metadata !{metadata !84}
-!84 = metadata !{metadata !84, metadata !82, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 0"}
+!84 = metadata !{metadata !84, metadata !82, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 0"}
 !85 = metadata !{metadata !86, metadata !88, metadata !78}
 !86 = metadata !{metadata !86, metadata !87, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 1"}
 !87 = metadata !{metadata !87, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE"}
@@ -15028,26 +15028,26 @@ attributes #15 = { noinline uwtable }
 !89 = metadata !{metadata !90}
 !90 = metadata !{metadata !90, metadata !87, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 0"}
 !91 = metadata !{metadata !92}
-!92 = metadata !{metadata !92, metadata !93, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h15599483003625122699E: argument 0"}
-!93 = metadata !{metadata !93, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h15599483003625122699E"}
+!92 = metadata !{metadata !92, metadata !93, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h10910309927599754569E: argument 0"}
+!93 = metadata !{metadata !93, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h10910309927599754569E"}
 !94 = metadata !{metadata !95, metadata !92}
-!95 = metadata !{metadata !95, metadata !96, metadata !"_ZN3ptr4read21h12916105987666707909E: argument 0"}
-!96 = metadata !{metadata !96, metadata !"_ZN3ptr4read21h12916105987666707909E"}
+!95 = metadata !{metadata !95, metadata !96, metadata !"_ZN3ptr4read20h2473164448670815799E: argument 0"}
+!96 = metadata !{metadata !96, metadata !"_ZN3ptr4read20h2473164448670815799E"}
 !97 = metadata !{metadata !98, metadata !92}
-!98 = metadata !{metadata !98, metadata !99, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h16583594005103159273E: argument 0"}
-!99 = metadata !{metadata !99, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h16583594005103159273E"}
+!98 = metadata !{metadata !98, metadata !99, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11977126655231889660E: argument 0"}
+!99 = metadata !{metadata !99, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11977126655231889660E"}
 !100 = metadata !{metadata !101, metadata !98, metadata !92}
-!101 = metadata !{metadata !101, metadata !102, metadata !"_ZN3ptr4read21h10838214936033180117E: argument 0"}
-!102 = metadata !{metadata !102, metadata !"_ZN3ptr4read21h10838214936033180117E"}
+!101 = metadata !{metadata !101, metadata !102, metadata !"_ZN3ptr4read21h14531584688819262931E: argument 0"}
+!102 = metadata !{metadata !102, metadata !"_ZN3ptr4read21h14531584688819262931E"}
 !103 = metadata !{metadata !101}
 !104 = metadata !{metadata !105}
 !105 = metadata !{metadata !105, metadata !106, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE: argument 0"}
 !106 = metadata !{metadata !106, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE"}
 !107 = metadata !{metadata !108, metadata !105}
-!108 = metadata !{metadata !108, metadata !109, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 1"}
-!109 = metadata !{metadata !109, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E"}
+!108 = metadata !{metadata !108, metadata !109, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 1"}
+!109 = metadata !{metadata !109, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E"}
 !110 = metadata !{metadata !111}
-!111 = metadata !{metadata !111, metadata !109, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 0"}
+!111 = metadata !{metadata !111, metadata !109, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 0"}
 !112 = metadata !{metadata !113, metadata !115, metadata !105}
 !113 = metadata !{metadata !113, metadata !114, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 1"}
 !114 = metadata !{metadata !114, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE"}
@@ -15055,17 +15055,17 @@ attributes #15 = { noinline uwtable }
 !116 = metadata !{metadata !117}
 !117 = metadata !{metadata !117, metadata !114, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 0"}
 !118 = metadata !{metadata !119}
-!119 = metadata !{metadata !119, metadata !120, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h15599483003625122699E: argument 0"}
-!120 = metadata !{metadata !120, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h15599483003625122699E"}
+!119 = metadata !{metadata !119, metadata !120, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h10910309927599754569E: argument 0"}
+!120 = metadata !{metadata !120, metadata !"_ZN2rc16Rc$LT$T$GT$.Drop4drop21h10910309927599754569E"}
 !121 = metadata !{metadata !122, metadata !119}
-!122 = metadata !{metadata !122, metadata !123, metadata !"_ZN3ptr4read21h12916105987666707909E: argument 0"}
-!123 = metadata !{metadata !123, metadata !"_ZN3ptr4read21h12916105987666707909E"}
+!122 = metadata !{metadata !122, metadata !123, metadata !"_ZN3ptr4read20h2473164448670815799E: argument 0"}
+!123 = metadata !{metadata !123, metadata !"_ZN3ptr4read20h2473164448670815799E"}
 !124 = metadata !{metadata !125, metadata !119}
-!125 = metadata !{metadata !125, metadata !126, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h16583594005103159273E: argument 0"}
-!126 = metadata !{metadata !126, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h16583594005103159273E"}
+!125 = metadata !{metadata !125, metadata !126, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11977126655231889660E: argument 0"}
+!126 = metadata !{metadata !126, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11977126655231889660E"}
 !127 = metadata !{metadata !128, metadata !125, metadata !119}
-!128 = metadata !{metadata !128, metadata !129, metadata !"_ZN3ptr4read21h10838214936033180117E: argument 0"}
-!129 = metadata !{metadata !129, metadata !"_ZN3ptr4read21h10838214936033180117E"}
+!128 = metadata !{metadata !128, metadata !129, metadata !"_ZN3ptr4read21h14531584688819262931E: argument 0"}
+!129 = metadata !{metadata !129, metadata !"_ZN3ptr4read21h14531584688819262931E"}
 !130 = metadata !{metadata !128}
 !131 = metadata !{metadata !132, metadata !134}
 !132 = metadata !{metadata !132, metadata !133, metadata !"_ZN6string10T.ToString9to_string21h18045919475486484234E: argument 0"}
@@ -15332,99 +15332,99 @@ attributes #15 = { noinline uwtable }
 !393 = metadata !{metadata !393, metadata !392, metadata !"_ZN22Document$LT$$u27$a$GT$14element_create20h2b111ca41ad4f6322zaE: argument 1"}
 !394 = metadata !{metadata !394, metadata !392, metadata !"_ZN22Document$LT$$u27$a$GT$14element_create20h2b111ca41ad4f6322zaE: argument 2"}
 !395 = metadata !{metadata !396, metadata !398}
-!396 = metadata !{metadata !396, metadata !397, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E: argument 0"}
-!397 = metadata !{metadata !397, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E"}
-!398 = metadata !{metadata !398, metadata !399, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E: argument 0"}
-!399 = metadata !{metadata !399, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E"}
+!396 = metadata !{metadata !396, metadata !397, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E: argument 0"}
+!397 = metadata !{metadata !397, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E"}
+!398 = metadata !{metadata !398, metadata !399, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E: argument 0"}
+!399 = metadata !{metadata !399, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E"}
 !400 = metadata !{metadata !401}
-!401 = metadata !{metadata !401, metadata !402, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!402 = metadata !{metadata !402, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!401 = metadata !{metadata !401, metadata !402, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!402 = metadata !{metadata !402, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !403 = metadata !{metadata !404, metadata !401, metadata !391, metadata !394}
-!404 = metadata !{metadata !404, metadata !405, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!405 = metadata !{metadata !405, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!404 = metadata !{metadata !404, metadata !405, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!405 = metadata !{metadata !405, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !406 = metadata !{metadata !407, metadata !401, metadata !391, metadata !394}
-!407 = metadata !{metadata !407, metadata !408, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!408 = metadata !{metadata !408, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!407 = metadata !{metadata !407, metadata !408, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!408 = metadata !{metadata !408, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !409 = metadata !{metadata !401, metadata !391, metadata !394}
 !410 = metadata !{metadata !411}
-!411 = metadata !{metadata !411, metadata !412, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!412 = metadata !{metadata !412, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!411 = metadata !{metadata !411, metadata !412, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!412 = metadata !{metadata !412, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !413 = metadata !{metadata !414, metadata !411, metadata !391, metadata !394}
-!414 = metadata !{metadata !414, metadata !415, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!415 = metadata !{metadata !415, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!414 = metadata !{metadata !414, metadata !415, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!415 = metadata !{metadata !415, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !416 = metadata !{metadata !417, metadata !411, metadata !391, metadata !394}
-!417 = metadata !{metadata !417, metadata !418, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!418 = metadata !{metadata !418, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!417 = metadata !{metadata !417, metadata !418, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!418 = metadata !{metadata !418, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !419 = metadata !{metadata !411, metadata !391, metadata !394}
 !420 = metadata !{metadata !421, metadata !423}
 !421 = metadata !{metadata !421, metadata !422, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$8html_set20h5cd68783f27b21edjiaE: argument 0"}
 !422 = metadata !{metadata !422, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$8html_set20h5cd68783f27b21edjiaE"}
 !423 = metadata !{metadata !423, metadata !422, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$8html_set20h5cd68783f27b21edjiaE: argument 1"}
 !424 = metadata !{metadata !425, metadata !427}
-!425 = metadata !{metadata !425, metadata !426, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E: argument 0"}
-!426 = metadata !{metadata !426, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E"}
-!427 = metadata !{metadata !427, metadata !428, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E: argument 0"}
-!428 = metadata !{metadata !428, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E"}
+!425 = metadata !{metadata !425, metadata !426, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E: argument 0"}
+!426 = metadata !{metadata !426, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E"}
+!427 = metadata !{metadata !427, metadata !428, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E: argument 0"}
+!428 = metadata !{metadata !428, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E"}
 !429 = metadata !{metadata !430}
-!430 = metadata !{metadata !430, metadata !431, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!431 = metadata !{metadata !431, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!430 = metadata !{metadata !430, metadata !431, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!431 = metadata !{metadata !431, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !432 = metadata !{metadata !433, metadata !430, metadata !421, metadata !423}
-!433 = metadata !{metadata !433, metadata !434, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!434 = metadata !{metadata !434, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!433 = metadata !{metadata !433, metadata !434, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!434 = metadata !{metadata !434, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !435 = metadata !{metadata !436, metadata !430, metadata !421, metadata !423}
-!436 = metadata !{metadata !436, metadata !437, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!437 = metadata !{metadata !437, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!436 = metadata !{metadata !436, metadata !437, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!437 = metadata !{metadata !437, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !438 = metadata !{metadata !430, metadata !421, metadata !423}
 !439 = metadata !{metadata !440}
-!440 = metadata !{metadata !440, metadata !441, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!441 = metadata !{metadata !441, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!440 = metadata !{metadata !440, metadata !441, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!441 = metadata !{metadata !441, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !442 = metadata !{metadata !443, metadata !440, metadata !421, metadata !423}
-!443 = metadata !{metadata !443, metadata !444, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!444 = metadata !{metadata !444, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!443 = metadata !{metadata !443, metadata !444, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!444 = metadata !{metadata !444, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !445 = metadata !{metadata !446, metadata !440, metadata !421, metadata !423}
-!446 = metadata !{metadata !446, metadata !447, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!447 = metadata !{metadata !447, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!446 = metadata !{metadata !446, metadata !447, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!447 = metadata !{metadata !447, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !448 = metadata !{metadata !440, metadata !421, metadata !423}
 !449 = metadata !{metadata !450}
-!450 = metadata !{metadata !450, metadata !451, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!451 = metadata !{metadata !451, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!450 = metadata !{metadata !450, metadata !451, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!451 = metadata !{metadata !451, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !452 = metadata !{metadata !453}
-!453 = metadata !{metadata !453, metadata !454, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!454 = metadata !{metadata !454, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!453 = metadata !{metadata !453, metadata !454, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!454 = metadata !{metadata !454, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !455 = metadata !{metadata !456, metadata !453}
-!456 = metadata !{metadata !456, metadata !457, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!457 = metadata !{metadata !457, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!456 = metadata !{metadata !456, metadata !457, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!457 = metadata !{metadata !457, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !458 = metadata !{metadata !459, metadata !453}
-!459 = metadata !{metadata !459, metadata !460, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!460 = metadata !{metadata !460, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!459 = metadata !{metadata !459, metadata !460, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!460 = metadata !{metadata !460, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !461 = metadata !{metadata !462}
-!462 = metadata !{metadata !462, metadata !463, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!463 = metadata !{metadata !463, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!462 = metadata !{metadata !462, metadata !463, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!463 = metadata !{metadata !463, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !464 = metadata !{metadata !462, metadata !459, metadata !453}
 !465 = metadata !{metadata !466, metadata !468}
-!466 = metadata !{metadata !466, metadata !467, metadata !"_ZN6option15Option$LT$T$GT$6unwrap21h11692601341970590343E: argument 0"}
-!467 = metadata !{metadata !467, metadata !"_ZN6option15Option$LT$T$GT$6unwrap21h11692601341970590343E"}
-!468 = metadata !{metadata !468, metadata !467, metadata !"_ZN6option15Option$LT$T$GT$6unwrap21h11692601341970590343E: argument 1"}
+!466 = metadata !{metadata !466, metadata !467, metadata !"_ZN6option15Option$LT$T$GT$6unwrap18h84749987169799002E: argument 0"}
+!467 = metadata !{metadata !467, metadata !"_ZN6option15Option$LT$T$GT$6unwrap18h84749987169799002E"}
+!468 = metadata !{metadata !468, metadata !467, metadata !"_ZN6option15Option$LT$T$GT$6unwrap18h84749987169799002E: argument 1"}
 !469 = metadata !{metadata !470}
-!470 = metadata !{metadata !470, metadata !471, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!471 = metadata !{metadata !471, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!470 = metadata !{metadata !470, metadata !471, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!471 = metadata !{metadata !471, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !472 = metadata !{metadata !473}
-!473 = metadata !{metadata !473, metadata !474, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!474 = metadata !{metadata !474, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!473 = metadata !{metadata !473, metadata !474, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!474 = metadata !{metadata !474, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !475 = metadata !{metadata !476, metadata !473}
-!476 = metadata !{metadata !476, metadata !477, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!477 = metadata !{metadata !477, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!476 = metadata !{metadata !476, metadata !477, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!477 = metadata !{metadata !477, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !478 = metadata !{metadata !479, metadata !473}
-!479 = metadata !{metadata !479, metadata !480, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!480 = metadata !{metadata !480, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!479 = metadata !{metadata !479, metadata !480, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!480 = metadata !{metadata !480, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !481 = metadata !{metadata !482}
 !482 = metadata !{metadata !482, metadata !483, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE: argument 0"}
 !483 = metadata !{metadata !483, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE"}
 !484 = metadata !{metadata !485, metadata !482}
-!485 = metadata !{metadata !485, metadata !486, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 1"}
-!486 = metadata !{metadata !486, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E"}
+!485 = metadata !{metadata !485, metadata !486, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 1"}
+!486 = metadata !{metadata !486, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E"}
 !487 = metadata !{metadata !488}
-!488 = metadata !{metadata !488, metadata !486, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 0"}
+!488 = metadata !{metadata !488, metadata !486, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 0"}
 !489 = metadata !{metadata !490, metadata !492, metadata !482}
 !490 = metadata !{metadata !490, metadata !491, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 1"}
 !491 = metadata !{metadata !491, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE"}
@@ -15432,58 +15432,58 @@ attributes #15 = { noinline uwtable }
 !493 = metadata !{metadata !494}
 !494 = metadata !{metadata !494, metadata !491, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 0"}
 !495 = metadata !{metadata !496}
-!496 = metadata !{metadata !496, metadata !497, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop21h12332887073207477011E: argument 0"}
-!497 = metadata !{metadata !497, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop21h12332887073207477011E"}
+!496 = metadata !{metadata !496, metadata !497, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop20h2570354864840393445E: argument 0"}
+!497 = metadata !{metadata !497, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop20h2570354864840393445E"}
 !498 = metadata !{metadata !499, metadata !501}
-!499 = metadata !{metadata !499, metadata !500, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$2on20h8402160457942834666E: argument 0"}
-!500 = metadata !{metadata !500, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$2on20h8402160457942834666E"}
-!501 = metadata !{metadata !501, metadata !500, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$2on20h8402160457942834666E: argument 1"}
+!499 = metadata !{metadata !499, metadata !500, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$2on20h3402960002889999494E: argument 0"}
+!500 = metadata !{metadata !500, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$2on20h3402960002889999494E"}
+!501 = metadata !{metadata !501, metadata !500, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$2on20h3402960002889999494E: argument 1"}
 !502 = metadata !{metadata !503, metadata !505}
-!503 = metadata !{metadata !503, metadata !504, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts19h749777110151704281E: argument 0"}
-!504 = metadata !{metadata !504, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts19h749777110151704281E"}
-!505 = metadata !{metadata !505, metadata !506, metadata !"_ZN3vec12Vec$LT$T$GT$3new21h10936763374372623210E: argument 0"}
-!506 = metadata !{metadata !506, metadata !"_ZN3vec12Vec$LT$T$GT$3new21h10936763374372623210E"}
+!503 = metadata !{metadata !503, metadata !504, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h9477977076526093091E: argument 0"}
+!504 = metadata !{metadata !504, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h9477977076526093091E"}
+!505 = metadata !{metadata !505, metadata !506, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3148725016982705834E: argument 0"}
+!506 = metadata !{metadata !506, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3148725016982705834E"}
 !507 = metadata !{metadata !501}
 !508 = metadata !{metadata !499}
 !509 = metadata !{metadata !510}
-!510 = metadata !{metadata !510, metadata !511, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h3546574729999591150E: argument 0"}
-!511 = metadata !{metadata !511, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h3546574729999591150E"}
+!510 = metadata !{metadata !510, metadata !511, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h2101465847630733843E: argument 0"}
+!511 = metadata !{metadata !511, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h2101465847630733843E"}
 !512 = metadata !{metadata !513, metadata !510, metadata !499, metadata !501}
-!513 = metadata !{metadata !513, metadata !514, metadata !"_ZN3ptr4read19h101095638138826652E: argument 0"}
-!514 = metadata !{metadata !514, metadata !"_ZN3ptr4read19h101095638138826652E"}
+!513 = metadata !{metadata !513, metadata !514, metadata !"_ZN3ptr4read20h5038114756307942702E: argument 0"}
+!514 = metadata !{metadata !514, metadata !"_ZN3ptr4read20h5038114756307942702E"}
 !515 = metadata !{metadata !516, metadata !510, metadata !499, metadata !501}
-!516 = metadata !{metadata !516, metadata !517, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h4345178287721629465E: argument 0"}
-!517 = metadata !{metadata !517, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h4345178287721629465E"}
+!516 = metadata !{metadata !516, metadata !517, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12002316163278746921E: argument 0"}
+!517 = metadata !{metadata !517, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12002316163278746921E"}
 !518 = metadata !{metadata !510, metadata !499, metadata !501}
 !519 = metadata !{metadata !520}
-!520 = metadata !{metadata !520, metadata !521, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h3546574729999591150E: argument 0"}
-!521 = metadata !{metadata !521, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h3546574729999591150E"}
+!520 = metadata !{metadata !520, metadata !521, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h2101465847630733843E: argument 0"}
+!521 = metadata !{metadata !521, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h2101465847630733843E"}
 !522 = metadata !{metadata !523, metadata !520, metadata !499, metadata !501}
-!523 = metadata !{metadata !523, metadata !524, metadata !"_ZN3ptr4read19h101095638138826652E: argument 0"}
-!524 = metadata !{metadata !524, metadata !"_ZN3ptr4read19h101095638138826652E"}
+!523 = metadata !{metadata !523, metadata !524, metadata !"_ZN3ptr4read20h5038114756307942702E: argument 0"}
+!524 = metadata !{metadata !524, metadata !"_ZN3ptr4read20h5038114756307942702E"}
 !525 = metadata !{metadata !526, metadata !520, metadata !499, metadata !501}
-!526 = metadata !{metadata !526, metadata !527, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h4345178287721629465E: argument 0"}
-!527 = metadata !{metadata !527, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h4345178287721629465E"}
+!526 = metadata !{metadata !526, metadata !527, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12002316163278746921E: argument 0"}
+!527 = metadata !{metadata !527, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12002316163278746921E"}
 !528 = metadata !{metadata !520, metadata !499, metadata !501}
 !529 = metadata !{metadata !530}
-!530 = metadata !{metadata !530, metadata !531, metadata !"_ZN2rc29Rc$LT$T$GT$.RcBoxPtr$LT$T$GT$5inner20h1721186860143871430E: argument 0"}
-!531 = metadata !{metadata !531, metadata !"_ZN2rc29Rc$LT$T$GT$.RcBoxPtr$LT$T$GT$5inner20h1721186860143871430E"}
+!530 = metadata !{metadata !530, metadata !531, metadata !"_ZN2rc29Rc$LT$T$GT$.RcBoxPtr$LT$T$GT$5inner20h4410214131924239791E: argument 0"}
+!531 = metadata !{metadata !531, metadata !"_ZN2rc29Rc$LT$T$GT$.RcBoxPtr$LT$T$GT$5inner20h4410214131924239791E"}
 !532 = metadata !{metadata !533}
 !533 = metadata !{metadata !533, metadata !534, metadata !"_ZN4cell26BorrowRefMut$LT$$u27$b$GT$3new20h96a4fbe4fc346aaeINsE: argument 0"}
 !534 = metadata !{metadata !534, metadata !"_ZN4cell26BorrowRefMut$LT$$u27$b$GT$3new20h96a4fbe4fc346aaeINsE"}
 !535 = metadata !{metadata !536, metadata !499, metadata !501}
-!536 = metadata !{metadata !536, metadata !537, metadata !"_ZN4cell16RefCell$LT$T$GT$10borrow_mut21h15547581265432153730E: argument 0"}
-!537 = metadata !{metadata !537, metadata !"_ZN4cell16RefCell$LT$T$GT$10borrow_mut21h15547581265432153730E"}
+!536 = metadata !{metadata !536, metadata !537, metadata !"_ZN4cell16RefCell$LT$T$GT$10borrow_mut20h2556988401903109218E: argument 0"}
+!537 = metadata !{metadata !537, metadata !"_ZN4cell16RefCell$LT$T$GT$10borrow_mut20h2556988401903109218E"}
 !538 = metadata !{metadata !539, metadata !499, metadata !501}
-!539 = metadata !{metadata !539, metadata !540, metadata !"_ZN3vec12Vec$LT$T$GT$4push20h4767906917008807852E: argument 1"}
-!540 = metadata !{metadata !540, metadata !"_ZN3vec12Vec$LT$T$GT$4push20h4767906917008807852E"}
+!539 = metadata !{metadata !539, metadata !540, metadata !"_ZN3vec12Vec$LT$T$GT$4push21h17892133072221872852E: argument 1"}
+!540 = metadata !{metadata !540, metadata !"_ZN3vec12Vec$LT$T$GT$4push21h17892133072221872852E"}
 !541 = metadata !{metadata !542}
-!542 = metadata !{metadata !542, metadata !540, metadata !"_ZN3vec12Vec$LT$T$GT$4push20h4767906917008807852E: argument 0"}
+!542 = metadata !{metadata !542, metadata !540, metadata !"_ZN3vec12Vec$LT$T$GT$4push21h17892133072221872852E: argument 0"}
 !543 = metadata !{metadata !542, metadata !499, metadata !501}
 !544 = metadata !{metadata !539}
 !545 = metadata !{metadata !546, metadata !542, metadata !499, metadata !501}
-!546 = metadata !{metadata !546, metadata !547, metadata !"_ZN3ptr5write21h14755569705671569576E: argument 0"}
-!547 = metadata !{metadata !547, metadata !"_ZN3ptr5write21h14755569705671569576E"}
+!546 = metadata !{metadata !546, metadata !547, metadata !"_ZN3ptr5write20h3170765504609492548E: argument 0"}
+!547 = metadata !{metadata !547, metadata !"_ZN3ptr5write20h3170765504609492548E"}
 !548 = metadata !{metadata !549}
 !549 = metadata !{metadata !549, metadata !550, metadata !"_ZN4cell31BorrowRefMut$LT$$u27$b$GT$.Drop4drop20h5328c13677608f29QMsE: argument 0"}
 !550 = metadata !{metadata !550, metadata !"_ZN4cell31BorrowRefMut$LT$$u27$b$GT$.Drop4drop20h5328c13677608f29QMsE"}
@@ -15493,54 +15493,54 @@ attributes #15 = { noinline uwtable }
 !554 = metadata !{metadata !554, metadata !553, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$12prop_set_str20h766aeb024c6a23facraE: argument 1"}
 !555 = metadata !{metadata !555, metadata !553, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$12prop_set_str20h766aeb024c6a23facraE: argument 2"}
 !556 = metadata !{metadata !557, metadata !559}
-!557 = metadata !{metadata !557, metadata !558, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E: argument 0"}
-!558 = metadata !{metadata !558, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E"}
-!559 = metadata !{metadata !559, metadata !560, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E: argument 0"}
-!560 = metadata !{metadata !560, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E"}
+!557 = metadata !{metadata !557, metadata !558, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E: argument 0"}
+!558 = metadata !{metadata !558, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E"}
+!559 = metadata !{metadata !559, metadata !560, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E: argument 0"}
+!560 = metadata !{metadata !560, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E"}
 !561 = metadata !{metadata !554, metadata !555}
 !562 = metadata !{metadata !552}
 !563 = metadata !{metadata !564}
-!564 = metadata !{metadata !564, metadata !565, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!565 = metadata !{metadata !565, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!564 = metadata !{metadata !564, metadata !565, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!565 = metadata !{metadata !565, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !566 = metadata !{metadata !567, metadata !564, metadata !552, metadata !554, metadata !555}
-!567 = metadata !{metadata !567, metadata !568, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!568 = metadata !{metadata !568, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!567 = metadata !{metadata !567, metadata !568, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!568 = metadata !{metadata !568, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !569 = metadata !{metadata !570, metadata !564, metadata !552, metadata !554, metadata !555}
-!570 = metadata !{metadata !570, metadata !571, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!571 = metadata !{metadata !571, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!570 = metadata !{metadata !570, metadata !571, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!571 = metadata !{metadata !571, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !572 = metadata !{metadata !564, metadata !552, metadata !554, metadata !555}
 !573 = metadata !{metadata !574}
-!574 = metadata !{metadata !574, metadata !575, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!575 = metadata !{metadata !575, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!574 = metadata !{metadata !574, metadata !575, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!575 = metadata !{metadata !575, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !576 = metadata !{metadata !577, metadata !574, metadata !552, metadata !554, metadata !555}
-!577 = metadata !{metadata !577, metadata !578, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!578 = metadata !{metadata !578, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!577 = metadata !{metadata !577, metadata !578, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!578 = metadata !{metadata !578, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !579 = metadata !{metadata !580, metadata !574, metadata !552, metadata !554, metadata !555}
-!580 = metadata !{metadata !580, metadata !581, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!581 = metadata !{metadata !581, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!580 = metadata !{metadata !580, metadata !581, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!581 = metadata !{metadata !581, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !582 = metadata !{metadata !574, metadata !552, metadata !554, metadata !555}
 !583 = metadata !{metadata !584}
 !584 = metadata !{metadata !584, metadata !585, metadata !"_ZN4cell31BorrowRefMut$LT$$u27$b$GT$.Drop4drop20h5328c13677608f29QMsE: argument 0"}
 !585 = metadata !{metadata !585, metadata !"_ZN4cell31BorrowRefMut$LT$$u27$b$GT$.Drop4drop20h5328c13677608f29QMsE"}
 !586 = metadata !{metadata !587}
-!587 = metadata !{metadata !587, metadata !588, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop21h12332887073207477011E: argument 0"}
-!588 = metadata !{metadata !588, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop21h12332887073207477011E"}
+!587 = metadata !{metadata !587, metadata !588, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop20h2570354864840393445E: argument 0"}
+!588 = metadata !{metadata !588, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop20h2570354864840393445E"}
 !589 = metadata !{metadata !590, metadata !592}
-!590 = metadata !{metadata !590, metadata !591, metadata !"_ZN3vec12Vec$LT$T$GT$9into_iter21h15528425674431643389E: argument 1"}
-!591 = metadata !{metadata !591, metadata !"_ZN3vec12Vec$LT$T$GT$9into_iter21h15528425674431643389E"}
-!592 = metadata !{metadata !592, metadata !593, metadata !"_ZN3vec25Vec$LT$T$GT$.IntoIterator9into_iter20h6024246471036334357E: argument 1"}
-!593 = metadata !{metadata !593, metadata !"_ZN3vec25Vec$LT$T$GT$.IntoIterator9into_iter20h6024246471036334357E"}
+!590 = metadata !{metadata !590, metadata !591, metadata !"_ZN3vec12Vec$LT$T$GT$9into_iter21h13400829708664940165E: argument 1"}
+!591 = metadata !{metadata !591, metadata !"_ZN3vec12Vec$LT$T$GT$9into_iter21h13400829708664940165E"}
+!592 = metadata !{metadata !592, metadata !593, metadata !"_ZN3vec25Vec$LT$T$GT$.IntoIterator9into_iter20h4981117978485132751E: argument 1"}
+!593 = metadata !{metadata !593, metadata !"_ZN3vec25Vec$LT$T$GT$.IntoIterator9into_iter20h4981117978485132751E"}
 !594 = metadata !{metadata !595, metadata !596}
-!595 = metadata !{metadata !595, metadata !591, metadata !"_ZN3vec12Vec$LT$T$GT$9into_iter21h15528425674431643389E: argument 0"}
-!596 = metadata !{metadata !596, metadata !593, metadata !"_ZN3vec25Vec$LT$T$GT$.IntoIterator9into_iter20h6024246471036334357E: argument 0"}
+!595 = metadata !{metadata !595, metadata !591, metadata !"_ZN3vec12Vec$LT$T$GT$9into_iter21h13400829708664940165E: argument 0"}
+!596 = metadata !{metadata !596, metadata !593, metadata !"_ZN3vec25Vec$LT$T$GT$.IntoIterator9into_iter20h4981117978485132751E: argument 0"}
 !597 = metadata !{metadata !598}
-!598 = metadata !{metadata !598, metadata !599, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h2471882353761513961E: argument 0"}
-!599 = metadata !{metadata !599, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h2471882353761513961E"}
+!598 = metadata !{metadata !598, metadata !599, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h5126099863042992695E: argument 0"}
+!599 = metadata !{metadata !599, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h5126099863042992695E"}
 !600 = metadata !{metadata !601}
-!601 = metadata !{metadata !601, metadata !599, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h2471882353761513961E: argument 1"}
+!601 = metadata !{metadata !601, metadata !599, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h5126099863042992695E: argument 1"}
 !602 = metadata !{metadata !603, metadata !598, metadata !601}
-!603 = metadata !{metadata !603, metadata !604, metadata !"_ZN3ptr4read20h1638401838688945175E: argument 0"}
-!604 = metadata !{metadata !604, metadata !"_ZN3ptr4read20h1638401838688945175E"}
+!603 = metadata !{metadata !603, metadata !604, metadata !"_ZN3ptr4read21h14313637116274013825E: argument 0"}
+!604 = metadata !{metadata !604, metadata !"_ZN3ptr4read21h14313637116274013825E"}
 !605 = metadata !{metadata !423}
 !606 = metadata !{metadata !421}
 !607 = metadata !{metadata !608, metadata !610}
@@ -15553,10 +15553,10 @@ attributes #15 = { noinline uwtable }
 !614 = metadata !{metadata !614, metadata !615, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE: argument 0"}
 !615 = metadata !{metadata !615, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE"}
 !616 = metadata !{metadata !617, metadata !614}
-!617 = metadata !{metadata !617, metadata !618, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 1"}
-!618 = metadata !{metadata !618, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E"}
+!617 = metadata !{metadata !617, metadata !618, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 1"}
+!618 = metadata !{metadata !618, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E"}
 !619 = metadata !{metadata !620}
-!620 = metadata !{metadata !620, metadata !618, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 0"}
+!620 = metadata !{metadata !620, metadata !618, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 0"}
 !621 = metadata !{metadata !622, metadata !624, metadata !614}
 !622 = metadata !{metadata !622, metadata !623, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 1"}
 !623 = metadata !{metadata !623, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE"}
@@ -15564,115 +15564,115 @@ attributes #15 = { noinline uwtable }
 !625 = metadata !{metadata !626}
 !626 = metadata !{metadata !626, metadata !623, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 0"}
 !627 = metadata !{metadata !628}
-!628 = metadata !{metadata !628, metadata !629, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!629 = metadata !{metadata !629, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!628 = metadata !{metadata !628, metadata !629, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!629 = metadata !{metadata !629, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !630 = metadata !{metadata !631}
-!631 = metadata !{metadata !631, metadata !632, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!632 = metadata !{metadata !632, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!631 = metadata !{metadata !631, metadata !632, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!632 = metadata !{metadata !632, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !633 = metadata !{metadata !634, metadata !631}
-!634 = metadata !{metadata !634, metadata !635, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!635 = metadata !{metadata !635, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!634 = metadata !{metadata !634, metadata !635, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!635 = metadata !{metadata !635, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !636 = metadata !{metadata !637, metadata !631}
-!637 = metadata !{metadata !637, metadata !638, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!638 = metadata !{metadata !638, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!637 = metadata !{metadata !637, metadata !638, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!638 = metadata !{metadata !638, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !639 = metadata !{metadata !640}
-!640 = metadata !{metadata !640, metadata !641, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!641 = metadata !{metadata !641, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!640 = metadata !{metadata !640, metadata !641, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!641 = metadata !{metadata !641, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !642 = metadata !{metadata !643}
-!643 = metadata !{metadata !643, metadata !644, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!644 = metadata !{metadata !644, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!643 = metadata !{metadata !643, metadata !644, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!644 = metadata !{metadata !644, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !645 = metadata !{metadata !646, metadata !643}
-!646 = metadata !{metadata !646, metadata !647, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!647 = metadata !{metadata !647, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!646 = metadata !{metadata !646, metadata !647, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!647 = metadata !{metadata !647, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !648 = metadata !{metadata !649, metadata !643}
-!649 = metadata !{metadata !649, metadata !650, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!650 = metadata !{metadata !650, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!649 = metadata !{metadata !649, metadata !650, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!650 = metadata !{metadata !650, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !651 = metadata !{metadata !652}
-!652 = metadata !{metadata !652, metadata !653, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!653 = metadata !{metadata !653, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!652 = metadata !{metadata !652, metadata !653, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!653 = metadata !{metadata !653, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !654 = metadata !{metadata !652, metadata !649, metadata !643}
 !655 = metadata !{metadata !656}
-!656 = metadata !{metadata !656, metadata !657, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!657 = metadata !{metadata !657, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!656 = metadata !{metadata !656, metadata !657, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!657 = metadata !{metadata !657, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !658 = metadata !{metadata !659}
-!659 = metadata !{metadata !659, metadata !660, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!660 = metadata !{metadata !660, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!659 = metadata !{metadata !659, metadata !660, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!660 = metadata !{metadata !660, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !661 = metadata !{metadata !662, metadata !659}
-!662 = metadata !{metadata !662, metadata !663, metadata !"_ZN3ptr4read20h1638401838688945175E: argument 0"}
-!663 = metadata !{metadata !663, metadata !"_ZN3ptr4read20h1638401838688945175E"}
+!662 = metadata !{metadata !662, metadata !663, metadata !"_ZN3ptr4read21h14313637116274013825E: argument 0"}
+!663 = metadata !{metadata !663, metadata !"_ZN3ptr4read21h14313637116274013825E"}
 !664 = metadata !{metadata !665}
-!665 = metadata !{metadata !665, metadata !666, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!666 = metadata !{metadata !666, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!665 = metadata !{metadata !665, metadata !666, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!666 = metadata !{metadata !666, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !667 = metadata !{metadata !668}
-!668 = metadata !{metadata !668, metadata !669, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop21h14224509522509341039E: argument 0"}
-!669 = metadata !{metadata !669, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop21h14224509522509341039E"}
+!668 = metadata !{metadata !668, metadata !669, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop20h4981070208288895061E: argument 0"}
+!669 = metadata !{metadata !669, metadata !"_ZN3vec22IntoIter$LT$T$GT$.Drop4drop20h4981070208288895061E"}
 !670 = metadata !{metadata !671, metadata !673}
-!671 = metadata !{metadata !671, metadata !672, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h2471882353761513961E: argument 0"}
-!672 = metadata !{metadata !672, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h2471882353761513961E"}
-!673 = metadata !{metadata !673, metadata !674, metadata !"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next21h12375538817070053100E: argument 0"}
-!674 = metadata !{metadata !674, metadata !"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next21h12375538817070053100E"}
+!671 = metadata !{metadata !671, metadata !672, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h5126099863042992695E: argument 0"}
+!672 = metadata !{metadata !672, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h5126099863042992695E"}
+!673 = metadata !{metadata !673, metadata !674, metadata !"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next21h12159763583792286247E: argument 0"}
+!674 = metadata !{metadata !674, metadata !"_ZN4iter34_$RF$$u27$a$u20$mut$u20$I.Iterator4next21h12159763583792286247E"}
 !675 = metadata !{metadata !676, metadata !668}
-!676 = metadata !{metadata !676, metadata !672, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h2471882353761513961E: argument 1"}
+!676 = metadata !{metadata !676, metadata !672, metadata !"_ZN3vec26IntoIter$LT$T$GT$.Iterator4next20h5126099863042992695E: argument 1"}
 !677 = metadata !{metadata !678, metadata !671, metadata !676, metadata !673, metadata !668}
-!678 = metadata !{metadata !678, metadata !679, metadata !"_ZN3ptr4read20h1638401838688945175E: argument 0"}
-!679 = metadata !{metadata !679, metadata !"_ZN3ptr4read20h1638401838688945175E"}
+!678 = metadata !{metadata !678, metadata !679, metadata !"_ZN3ptr4read21h14313637116274013825E: argument 0"}
+!679 = metadata !{metadata !679, metadata !"_ZN3ptr4read21h14313637116274013825E"}
 !680 = metadata !{metadata !681, metadata !668}
-!681 = metadata !{metadata !681, metadata !682, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!682 = metadata !{metadata !682, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!681 = metadata !{metadata !681, metadata !682, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!682 = metadata !{metadata !682, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !683 = metadata !{metadata !684, metadata !686, metadata !668}
-!684 = metadata !{metadata !684, metadata !685, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!685 = metadata !{metadata !685, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
-!686 = metadata !{metadata !686, metadata !687, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!687 = metadata !{metadata !687, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!684 = metadata !{metadata !684, metadata !685, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!685 = metadata !{metadata !685, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
+!686 = metadata !{metadata !686, metadata !687, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!687 = metadata !{metadata !687, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !688 = metadata !{metadata !689, metadata !691, metadata !686, metadata !668}
-!689 = metadata !{metadata !689, metadata !690, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!690 = metadata !{metadata !690, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
-!691 = metadata !{metadata !691, metadata !692, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!692 = metadata !{metadata !692, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!689 = metadata !{metadata !689, metadata !690, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!690 = metadata !{metadata !690, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
+!691 = metadata !{metadata !691, metadata !692, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!692 = metadata !{metadata !692, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !693 = metadata !{metadata !694, metadata !691, metadata !686, metadata !668}
-!694 = metadata !{metadata !694, metadata !695, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E: argument 0"}
-!695 = metadata !{metadata !695, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17017264654787223341E"}
+!694 = metadata !{metadata !694, metadata !695, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E: argument 0"}
+!695 = metadata !{metadata !695, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12858477988288781515E"}
 !696 = metadata !{metadata !691, metadata !686, metadata !668}
 !697 = metadata !{metadata !698}
-!698 = metadata !{metadata !698, metadata !699, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E: argument 0"}
-!699 = metadata !{metadata !699, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h11948338121956678661E"}
+!698 = metadata !{metadata !698, metadata !699, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E: argument 0"}
+!699 = metadata !{metadata !699, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h14337197587330486155E"}
 !700 = metadata !{metadata !698, metadata !694, metadata !691, metadata !686, metadata !668}
 !701 = metadata !{metadata !686, metadata !668}
 !702 = metadata !{metadata !703, metadata !705}
-!703 = metadata !{metadata !703, metadata !704, metadata !"_ZN6option15Option$LT$T$GT$6unwrap21h11692601341970590343E: argument 0"}
-!704 = metadata !{metadata !704, metadata !"_ZN6option15Option$LT$T$GT$6unwrap21h11692601341970590343E"}
-!705 = metadata !{metadata !705, metadata !704, metadata !"_ZN6option15Option$LT$T$GT$6unwrap21h11692601341970590343E: argument 1"}
+!703 = metadata !{metadata !703, metadata !704, metadata !"_ZN6option15Option$LT$T$GT$6unwrap18h84749987169799002E: argument 0"}
+!704 = metadata !{metadata !704, metadata !"_ZN6option15Option$LT$T$GT$6unwrap18h84749987169799002E"}
+!705 = metadata !{metadata !705, metadata !704, metadata !"_ZN6option15Option$LT$T$GT$6unwrap18h84749987169799002E: argument 1"}
 !706 = metadata !{metadata !707, metadata !709, metadata !710}
 !707 = metadata !{metadata !707, metadata !708, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$12prop_get_str20hebbe2d34036b6c9eFsaE: argument 0"}
 !708 = metadata !{metadata !708, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$12prop_get_str20hebbe2d34036b6c9eFsaE"}
 !709 = metadata !{metadata !709, metadata !708, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$12prop_get_str20hebbe2d34036b6c9eFsaE: argument 1"}
 !710 = metadata !{metadata !710, metadata !708, metadata !"_ZN22HtmlNode$LT$$u27$a$GT$12prop_get_str20hebbe2d34036b6c9eFsaE: argument 2"}
 !711 = metadata !{metadata !712, metadata !714}
-!712 = metadata !{metadata !712, metadata !713, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E: argument 0"}
-!713 = metadata !{metadata !713, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts21h10974434520418935500E"}
-!714 = metadata !{metadata !714, metadata !715, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E: argument 0"}
-!715 = metadata !{metadata !715, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h3172545224299611852E"}
+!712 = metadata !{metadata !712, metadata !713, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E: argument 0"}
+!713 = metadata !{metadata !713, metadata !"_ZN3vec12Vec$LT$T$GT$14from_raw_parts20h7313623910176482504E"}
+!714 = metadata !{metadata !714, metadata !715, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E: argument 0"}
+!715 = metadata !{metadata !715, metadata !"_ZN3vec12Vec$LT$T$GT$3new20h5441254328233337552E"}
 !716 = metadata !{metadata !707, metadata !710}
 !717 = metadata !{metadata !709}
 !718 = metadata !{metadata !719}
-!719 = metadata !{metadata !719, metadata !720, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!720 = metadata !{metadata !720, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!719 = metadata !{metadata !719, metadata !720, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!720 = metadata !{metadata !720, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !721 = metadata !{metadata !722, metadata !719, metadata !707, metadata !709, metadata !710}
-!722 = metadata !{metadata !722, metadata !723, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!723 = metadata !{metadata !723, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!722 = metadata !{metadata !722, metadata !723, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!723 = metadata !{metadata !723, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !724 = metadata !{metadata !725, metadata !719, metadata !707, metadata !709, metadata !710}
-!725 = metadata !{metadata !725, metadata !726, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!726 = metadata !{metadata !726, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!725 = metadata !{metadata !725, metadata !726, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!726 = metadata !{metadata !726, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !727 = metadata !{metadata !719, metadata !707, metadata !709, metadata !710}
 !728 = metadata !{metadata !729}
-!729 = metadata !{metadata !729, metadata !730, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E: argument 0"}
-!730 = metadata !{metadata !730, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h7366912656192100236E"}
+!729 = metadata !{metadata !729, metadata !730, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E: argument 0"}
+!730 = metadata !{metadata !730, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h1140336086708321165E"}
 !731 = metadata !{metadata !732, metadata !729, metadata !707, metadata !709, metadata !710}
-!732 = metadata !{metadata !732, metadata !733, metadata !"_ZN3ptr4read20h6182041687825339919E: argument 0"}
-!733 = metadata !{metadata !733, metadata !"_ZN3ptr4read20h6182041687825339919E"}
+!732 = metadata !{metadata !732, metadata !733, metadata !"_ZN3ptr4read20h2105625047950100822E: argument 0"}
+!733 = metadata !{metadata !733, metadata !"_ZN3ptr4read20h2105625047950100822E"}
 !734 = metadata !{metadata !735, metadata !729, metadata !707, metadata !709, metadata !710}
-!735 = metadata !{metadata !735, metadata !736, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!736 = metadata !{metadata !736, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!735 = metadata !{metadata !735, metadata !736, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!736 = metadata !{metadata !736, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !737 = metadata !{metadata !729, metadata !707, metadata !709, metadata !710}
 !738 = metadata !{metadata !739, metadata !707, metadata !709, metadata !710}
 !739 = metadata !{metadata !739, metadata !740, metadata !"_ZN3ffi5c_str4CStr8from_ptr20h26a6a55dd788f721DecE: argument 0"}
@@ -15683,16 +15683,16 @@ attributes #15 = { noinline uwtable }
 !744 = metadata !{metadata !745}
 !745 = metadata !{metadata !745, metadata !743, metadata !"_ZN3ffi5c_str4CStr8to_bytes20h99fff1232be60fa7ffcE: argument 0"}
 !746 = metadata !{metadata !747, metadata !707, metadata !709, metadata !710}
-!747 = metadata !{metadata !747, metadata !748, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h7050245684417201500E: argument 0"}
-!748 = metadata !{metadata !748, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h7050245684417201500E"}
+!747 = metadata !{metadata !747, metadata !748, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h8326417104446216042E: argument 0"}
+!748 = metadata !{metadata !748, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h8326417104446216042E"}
 !749 = metadata !{metadata !750}
-!750 = metadata !{metadata !750, metadata !748, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h7050245684417201500E: argument 1"}
+!750 = metadata !{metadata !750, metadata !748, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h8326417104446216042E: argument 1"}
 !751 = metadata !{metadata !747, metadata !750, metadata !707, metadata !709, metadata !710}
 !752 = metadata !{metadata !753, metadata !747, metadata !750, metadata !707, metadata !709, metadata !710}
-!753 = metadata !{metadata !753, metadata !754, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h3512697623879504500E: argument 1"}
-!754 = metadata !{metadata !754, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h3512697623879504500E"}
+!753 = metadata !{metadata !753, metadata !754, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h11474742659652039339E: argument 1"}
+!754 = metadata !{metadata !754, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h11474742659652039339E"}
 !755 = metadata !{metadata !756}
-!756 = metadata !{metadata !756, metadata !754, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h3512697623879504500E: argument 0"}
+!756 = metadata !{metadata !756, metadata !754, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h11474742659652039339E: argument 0"}
 !757 = metadata !{metadata !758, metadata !760, metadata !747, metadata !750, metadata !707, metadata !709, metadata !710}
 !758 = metadata !{metadata !758, metadata !759, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 1"}
 !759 = metadata !{metadata !759, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE"}
@@ -15719,10 +15719,10 @@ attributes #15 = { noinline uwtable }
 !780 = metadata !{metadata !780, metadata !781, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE: argument 0"}
 !781 = metadata !{metadata !781, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE"}
 !782 = metadata !{metadata !783, metadata !780}
-!783 = metadata !{metadata !783, metadata !784, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 1"}
-!784 = metadata !{metadata !784, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E"}
+!783 = metadata !{metadata !783, metadata !784, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 1"}
+!784 = metadata !{metadata !784, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E"}
 !785 = metadata !{metadata !786}
-!786 = metadata !{metadata !786, metadata !784, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 0"}
+!786 = metadata !{metadata !786, metadata !784, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 0"}
 !787 = metadata !{metadata !788, metadata !790, metadata !780}
 !788 = metadata !{metadata !788, metadata !789, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 1"}
 !789 = metadata !{metadata !789, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE"}
@@ -15732,10 +15732,10 @@ attributes #15 = { noinline uwtable }
 !793 = metadata !{metadata !774, metadata !709, metadata !710}
 !794 = metadata !{metadata !772, metadata !707}
 !795 = metadata !{metadata !796}
-!796 = metadata !{metadata !796, metadata !797, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h9047153083747387039E: argument 1"}
-!797 = metadata !{metadata !797, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h9047153083747387039E"}
+!796 = metadata !{metadata !796, metadata !797, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h13075950766893570287E: argument 1"}
+!797 = metadata !{metadata !797, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h13075950766893570287E"}
 !798 = metadata !{metadata !799}
-!799 = metadata !{metadata !799, metadata !797, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h9047153083747387039E: argument 0"}
+!799 = metadata !{metadata !799, metadata !797, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h13075950766893570287E: argument 0"}
 !800 = metadata !{metadata !801, metadata !803}
 !801 = metadata !{metadata !801, metadata !802, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 1"}
 !802 = metadata !{metadata !802, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE"}
@@ -15743,19 +15743,19 @@ attributes #15 = { noinline uwtable }
 !804 = metadata !{metadata !805}
 !805 = metadata !{metadata !805, metadata !802, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 0"}
 !806 = metadata !{metadata !807}
-!807 = metadata !{metadata !807, metadata !808, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h4345178287721629465E: argument 0"}
-!808 = metadata !{metadata !808, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h4345178287721629465E"}
+!807 = metadata !{metadata !807, metadata !808, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12002316163278746921E: argument 0"}
+!808 = metadata !{metadata !808, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12002316163278746921E"}
 !809 = metadata !{metadata !810}
-!810 = metadata !{metadata !810, metadata !811, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h4345178287721629465E: argument 0"}
-!811 = metadata !{metadata !811, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop20h4345178287721629465E"}
+!810 = metadata !{metadata !810, metadata !811, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12002316163278746921E: argument 0"}
+!811 = metadata !{metadata !811, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h12002316163278746921E"}
 !812 = metadata !{metadata !813}
 !813 = metadata !{metadata !813, metadata !814, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE: argument 0"}
 !814 = metadata !{metadata !814, metadata !"_ZN27HtmlNode$LT$$u27$a$GT$.Drop4drop20h37ce14c157ae63aewdaE"}
 !815 = metadata !{metadata !816, metadata !813}
-!816 = metadata !{metadata !816, metadata !817, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 1"}
-!817 = metadata !{metadata !817, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E"}
+!816 = metadata !{metadata !816, metadata !817, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 1"}
+!817 = metadata !{metadata !817, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E"}
 !818 = metadata !{metadata !819}
-!819 = metadata !{metadata !819, metadata !817, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h6587787464891676608E: argument 0"}
+!819 = metadata !{metadata !819, metadata !817, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h18144969254085884090E: argument 0"}
 !820 = metadata !{metadata !821, metadata !823, metadata !813}
 !821 = metadata !{metadata !821, metadata !822, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 1"}
 !822 = metadata !{metadata !822, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE"}
@@ -15763,12 +15763,12 @@ attributes #15 = { noinline uwtable }
 !824 = metadata !{metadata !825}
 !825 = metadata !{metadata !825, metadata !822, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 0"}
 !826 = metadata !{metadata !827, metadata !829}
-!827 = metadata !{metadata !827, metadata !828, metadata !"_ZN3vec29Vec$LT$T$GT$.AsSlice$LT$T$GT$8as_slice20h3504173227788050721E: argument 0"}
-!828 = metadata !{metadata !828, metadata !"_ZN3vec29Vec$LT$T$GT$.AsSlice$LT$T$GT$8as_slice20h3504173227788050721E"}
+!827 = metadata !{metadata !827, metadata !828, metadata !"_ZN3vec29Vec$LT$T$GT$.AsSlice$LT$T$GT$8as_slice19h520000951246781265E: argument 0"}
+!828 = metadata !{metadata !828, metadata !"_ZN3vec29Vec$LT$T$GT$.AsSlice$LT$T$GT$8as_slice19h520000951246781265E"}
 !829 = metadata !{metadata !829, metadata !830, metadata !"_ZN6string17String.ops..Deref5deref20h3b619507857ddc91OLhE: argument 0"}
 !830 = metadata !{metadata !830, metadata !"_ZN6string17String.ops..Deref5deref20h3b619507857ddc91OLhE"}
 !831 = metadata !{metadata !832, metadata !833}
-!832 = metadata !{metadata !832, metadata !828, metadata !"_ZN3vec29Vec$LT$T$GT$.AsSlice$LT$T$GT$8as_slice20h3504173227788050721E: argument 1"}
+!832 = metadata !{metadata !832, metadata !828, metadata !"_ZN3vec29Vec$LT$T$GT$.AsSlice$LT$T$GT$8as_slice19h520000951246781265E: argument 1"}
 !833 = metadata !{metadata !833, metadata !830, metadata !"_ZN6string17String.ops..Deref5deref20h3b619507857ddc91OLhE: argument 1"}
 !834 = metadata !{metadata !835, metadata !837}
 !835 = metadata !{metadata !835, metadata !836, metadata !"_ZN3fmt11str.Display3fmt20h38524756973a9792wXDE: argument 0"}
@@ -15782,9 +15782,9 @@ attributes #15 = { noinline uwtable }
 !843 = metadata !{metadata !843, metadata !844, metadata !"_ZN3ffi5c_str38_$RF$$u27$a$u20$$u5b$u8$u5d$.IntoBytes10into_bytes20hfa9744dbcca53806zicE: argument 0"}
 !844 = metadata !{metadata !844, metadata !"_ZN3ffi5c_str38_$RF$$u27$a$u20$$u5b$u8$u5d$.IntoBytes10into_bytes20hfa9744dbcca53806zicE"}
 !845 = metadata !{metadata !845, metadata !844, metadata !"_ZN3ffi5c_str38_$RF$$u27$a$u20$$u5b$u8$u5d$.IntoBytes10into_bytes20hfa9744dbcca53806zicE: argument 1"}
-!846 = metadata !{metadata !846, metadata !847, metadata !"_ZN3ffi5c_str7CString3new21h18264325876459672873E: argument 0"}
-!847 = metadata !{metadata !847, metadata !"_ZN3ffi5c_str7CString3new21h18264325876459672873E"}
-!848 = metadata !{metadata !848, metadata !847, metadata !"_ZN3ffi5c_str7CString3new21h18264325876459672873E: argument 1"}
+!846 = metadata !{metadata !846, metadata !847, metadata !"_ZN3ffi5c_str7CString3new21h17543811458917177687E: argument 0"}
+!847 = metadata !{metadata !847, metadata !"_ZN3ffi5c_str7CString3new21h17543811458917177687E"}
+!848 = metadata !{metadata !848, metadata !847, metadata !"_ZN3ffi5c_str7CString3new21h17543811458917177687E: argument 1"}
 !849 = metadata !{metadata !849, metadata !850, metadata !"_ZN3ffi5c_str29_$RF$$u27$a$u20$str.IntoBytes10into_bytes20h3a43585f07900467hicE: argument 0"}
 !850 = metadata !{metadata !850, metadata !"_ZN3ffi5c_str29_$RF$$u27$a$u20$str.IntoBytes10into_bytes20h3a43585f07900467hicE"}
 !851 = metadata !{metadata !851, metadata !850, metadata !"_ZN3ffi5c_str29_$RF$$u27$a$u20$str.IntoBytes10into_bytes20h3a43585f07900467hicE: argument 1"}
@@ -15818,9 +15818,9 @@ attributes #15 = { noinline uwtable }
 !879 = metadata !{metadata !879, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802383369433507197E"}
 !880 = metadata !{metadata !878, metadata !840, metadata !842, metadata !843, metadata !845, metadata !846, metadata !848, metadata !849, metadata !851}
 !881 = metadata !{metadata !882, metadata !884, metadata !846, metadata !848}
-!882 = metadata !{metadata !882, metadata !883, metadata !"_ZN4iter11IteratorExt8position21h11885577637057308367E: argument 0"}
-!883 = metadata !{metadata !883, metadata !"_ZN4iter11IteratorExt8position21h11885577637057308367E"}
-!884 = metadata !{metadata !884, metadata !883, metadata !"_ZN4iter11IteratorExt8position21h11885577637057308367E: argument 1"}
+!882 = metadata !{metadata !882, metadata !883, metadata !"_ZN4iter11IteratorExt8position21h12665037142320530974E: argument 0"}
+!883 = metadata !{metadata !883, metadata !"_ZN4iter11IteratorExt8position21h12665037142320530974E"}
+!884 = metadata !{metadata !884, metadata !883, metadata !"_ZN4iter11IteratorExt8position21h12665037142320530974E: argument 1"}
 !885 = metadata !{metadata !848, metadata !886, metadata !888}
 !886 = metadata !{metadata !886, metadata !887, metadata !"_ZN3ffi5c_str7CString18from_vec_unchecked20hc49fd92b5e27ee1fhbcE: argument 0"}
 !887 = metadata !{metadata !887, metadata !"_ZN3ffi5c_str7CString18from_vec_unchecked20hc49fd92b5e27ee1fhbcE"}
@@ -15829,22 +15829,22 @@ attributes #15 = { noinline uwtable }
 !890 = metadata !{metadata !890, metadata !891, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802383369433507197E: argument 0"}
 !891 = metadata !{metadata !891, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802383369433507197E"}
 !892 = metadata !{metadata !893}
-!893 = metadata !{metadata !893, metadata !894, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap21h13781152642793535951E: argument 0"}
-!894 = metadata !{metadata !894, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap21h13781152642793535951E"}
+!893 = metadata !{metadata !893, metadata !894, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h3222726376288268216E: argument 0"}
+!894 = metadata !{metadata !894, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h3222726376288268216E"}
 !895 = metadata !{metadata !896, metadata !898}
-!896 = metadata !{metadata !896, metadata !897, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!897 = metadata !{metadata !897, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
-!898 = metadata !{metadata !898, metadata !894, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap21h13781152642793535951E: argument 1"}
+!896 = metadata !{metadata !896, metadata !897, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!897 = metadata !{metadata !897, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
+!898 = metadata !{metadata !898, metadata !894, metadata !"_ZN6result24Result$LT$T$C$$u20$E$GT$6unwrap20h3222726376288268216E: argument 1"}
 !899 = metadata !{metadata !896, metadata !893}
 !900 = metadata !{metadata !898}
 !901 = metadata !{metadata !848}
 !902 = metadata !{metadata !846}
 !903 = metadata !{metadata !893, metadata !898}
 !904 = metadata !{metadata !905, metadata !893, metadata !898}
-!905 = metadata !{metadata !905, metadata !906, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h17627035872299478998E: argument 1"}
-!906 = metadata !{metadata !906, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h17627035872299478998E"}
+!905 = metadata !{metadata !905, metadata !906, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h2174800474259229238E: argument 1"}
+!906 = metadata !{metadata !906, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h2174800474259229238E"}
 !907 = metadata !{metadata !908}
-!908 = metadata !{metadata !908, metadata !906, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new21h17627035872299478998E: argument 0"}
+!908 = metadata !{metadata !908, metadata !906, metadata !"_ZN3fmt24ArgumentV1$LT$$u27$a$GT$3new20h2174800474259229238E: argument 0"}
 !909 = metadata !{metadata !910, metadata !912, metadata !893, metadata !898}
 !910 = metadata !{metadata !910, metadata !911, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE: argument 1"}
 !911 = metadata !{metadata !911, metadata !"_ZN3fmt23Arguments$LT$$u27$a$GT$6new_v120h798658aef3bff053VpDE"}
@@ -15855,13 +15855,13 @@ attributes #15 = { noinline uwtable }
 !916 = metadata !{metadata !916, metadata !917, metadata !"_ZN3vec12Vec$LT$T$GT$4push20h6403271415655511172E: argument 0"}
 !917 = metadata !{metadata !917, metadata !"_ZN3vec12Vec$LT$T$GT$4push20h6403271415655511172E"}
 !918 = metadata !{metadata !919}
-!919 = metadata !{metadata !919, metadata !920, metadata !"_ZN3vec12Vec$LT$T$GT$4push20h2504564378729775629E: argument 1"}
-!920 = metadata !{metadata !920, metadata !"_ZN3vec12Vec$LT$T$GT$4push20h2504564378729775629E"}
+!919 = metadata !{metadata !919, metadata !920, metadata !"_ZN3vec12Vec$LT$T$GT$4push21h12917768160320252258E: argument 1"}
+!920 = metadata !{metadata !920, metadata !"_ZN3vec12Vec$LT$T$GT$4push21h12917768160320252258E"}
 !921 = metadata !{metadata !922}
-!922 = metadata !{metadata !922, metadata !920, metadata !"_ZN3vec12Vec$LT$T$GT$4push20h2504564378729775629E: argument 0"}
+!922 = metadata !{metadata !922, metadata !920, metadata !"_ZN3vec12Vec$LT$T$GT$4push21h12917768160320252258E: argument 0"}
 !923 = metadata !{metadata !924, metadata !922, metadata !919}
-!924 = metadata !{metadata !924, metadata !925, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E: argument 0"}
-!925 = metadata !{metadata !925, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h13802892744434650792E"}
+!924 = metadata !{metadata !924, metadata !925, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E: argument 0"}
+!925 = metadata !{metadata !925, metadata !"_ZN3vec17Vec$LT$T$GT$.Drop4drop21h17295094164666158469E"}
 !926 = metadata !{metadata !922, metadata !919}
 !927 = metadata !{metadata !928, metadata !930}
 !928 = metadata !{metadata !928, metadata !929, metadata !"_ZN4sync5mutex37MutexGuard$LT$$u27$mutex$C$$u20$T$GT$3new20h8871215830918720254E: argument 0"}

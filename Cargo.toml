@@ -7,11 +7,5 @@ authors = ["Yosuke ONOUE <onoue@likr-lab.com>"]
 libc = "0.1.3"
 rustc-serialize = "0.3.1"
 
-[dependencies.rust-mustache]
-path = "rust-mustache"
-
 [dependencies.webplatform]
 version = "0.3.0"
-
-[dependencies.webplatform-url]
-path = "./rust-url"
