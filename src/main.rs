@@ -1,32 +1,43 @@
 extern crate webplatform;
 extern crate mithril;
 
-use mithril::{m, AttributeValue, Component, Node};
+use std::rc::Rc;
+use std::cell::RefCell;
+use webplatform::Event;
+use mithril::{attribute, m, text_node, text_value, AttributeValue, Component, Node};
 
 struct MainController {
-    message: &'static str,
+    message: String,
 }
 
 struct Main;
 
 impl Component<MainController> for Main {
     fn controller(&self) -> MainController {
-        MainController {message: "Hello"}
+        MainController {message: String::from_str("Hello")}
     }
 
-    fn view(&self, ctrl: &mut MainController) -> Node {
+    fn view(&self, ctrl: Rc<RefCell<MainController>>) -> Node {
+        let message = ctrl.borrow().message.clone();
         m("div",
-            vec![("class", AttributeValue::Text("unko"))],
+            vec![attribute("class", text_value("unko"))],
             vec![
                 m("p", vec![], vec![
-                    Node::Text(ctrl.message)
+                    Node::Text(message.clone()),
                 ]),
                 m("p", vec![], vec![
-                    Node::Text("world")
+                  text_node("world"),
                 ]),
                 m("input", vec![
-                    ("value", AttributeValue::Text(ctrl.message)),
-                    ("onchange", AttributeValue::EventHandler),
+                    attribute("value", AttributeValue::Text(message.clone())),
+                    attribute("change", AttributeValue::EventHandler(Box::new({
+                        let ctrl = ctrl.clone();
+                        move |e: &mut Event| {
+                            let node = e.target.as_mut().unwrap();
+                            ctrl.borrow_mut().message = node.prop_get_str("value");
+                            println!("{}", ctrl.borrow_mut().message);
+                        }
+                    }))),
                 ], vec![])
             ]
         )
