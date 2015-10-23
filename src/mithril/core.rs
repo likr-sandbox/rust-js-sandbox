@@ -22,9 +22,8 @@ pub enum Node {
     Element(Element),
 }
 
-pub trait Component<T> {
-    fn controller(&self) -> T;
-    fn view(&self, Rc<RefCell<T>>) -> Node;
+pub trait Component {
+    fn render(&self) -> Node;
 }
 
 pub fn m(tag: &str, attributes: Vec<Attribute>, children: Vec<Node>) -> Node {

@@ -3,22 +3,18 @@ extern crate mithril;
 
 use std::rc::Rc;
 use std::cell::RefCell;
+use std::collections::HashMap;
 use webplatform::Event;
 use mithril::{attribute, m, text_node, text_value, AttributeValue, Component, Node};
 
-struct MainController {
-    message: String,
+struct Main {
+    state: Rc<RefCell<HashMap<String, String>>>
 }
 
-struct Main;
-
-impl Component<MainController> for Main {
-    fn controller(&self) -> MainController {
-        MainController {message: String::from_str("Hello")}
-    }
-
-    fn view(&self, ctrl: Rc<RefCell<MainController>>) -> Node {
-        let message = ctrl.borrow().message.clone();
+impl Component for Main {
+    fn render(&self) -> Node {
+        let key = String::from_str("message");
+        let message = self.state.borrow().get(&key).unwrap().clone();
         m("div",
             vec![attribute("class", text_value("unko"))],
             vec![
@@ -31,11 +27,14 @@ impl Component<MainController> for Main {
                 m("input", vec![
                     attribute("value", AttributeValue::Text(message.clone())),
                     attribute("change", AttributeValue::EventHandler(Box::new({
-                        let ctrl = ctrl.clone();
+                        let state = self.state.clone();
                         move |e: &mut Event| {
+                            let key = String::from_str("message");
+                            let mut st = state.borrow_mut();
                             let node = e.target.as_mut().unwrap();
-                            ctrl.borrow_mut().message = node.prop_get_str("value");
-                            println!("{}", ctrl.borrow_mut().message);
+                            st.insert(key, node.prop_get_str("value"));
+                            let key = String::from_str("message");
+                            println!("{}", st.get(&key).unwrap());
                         }
                     }))),
                 ], vec![])
@@ -45,10 +44,14 @@ impl Component<MainController> for Main {
 }
 
 fn main() {
-    let main_component = Main;
+    let mut state = HashMap::new();
+    state.insert(String::from_str("message"), String::from_str("Hello"));
+    let main_component = Rc::new(RefCell::new(Main {
+        state: Rc::new(RefCell::new(state)),
+    }));
 
     let document = Rc::new(RefCell::new(webplatform::init()));
     let body = Rc::new(RefCell::new(document.borrow().element_query("body").unwrap()));
-    mithril::mount(document.clone(), body.clone(), main_component);
+    mithril::mount(document.clone(), body.clone(), main_component.clone());
     webplatform::spin();
 }

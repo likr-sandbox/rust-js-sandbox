@@ -6,39 +6,28 @@ use std::ops::Deref;
 use self::webplatform::{Document,HtmlNode};
 use super::core::{AttributeValue,Component,Node};
 
-struct Context<'a, Controller, T: Component<Controller>> {
-    controller: Rc<RefCell<Controller>>,
-    component: T,
-    doc: Rc<RefCell<Document<'a>>>,
-    root: Rc<RefCell<HtmlNode<'a>>>,
+pub fn mount<'a, T: 'a + Component>(
+        document: Rc<RefCell<Document<'a>>>,
+        root: Rc<RefCell<HtmlNode<'a>>>,
+        component: Rc<RefCell<T>>) {
+    let target = root.borrow();
+    target.html_set("");
+    let node = component.borrow().render();
+    render(document, target.deref(), node, root.clone(), component);
 }
 
-pub fn mount<'a, Controller, T: Component<Controller>>(document: Rc<RefCell<Document<'a>>>, target: Rc<RefCell<HtmlNode<'a>>>, component: T) {
-    let context = Rc::new(RefCell::new(Context {
-        controller: Rc::new(RefCell::new(component.controller())),
-        component: component,
-        doc: document,
-        root: target,
-    }));
-    redraw(context);
-}
-
-fn redraw<'a, Controller, T: Component<Controller>>(context: Rc<RefCell<Context<'a, Controller, T>>>) {
-    let node = context.borrow().component.view(context.borrow().controller.clone());
-    let ctx = context.borrow();
-    let target = ctx.root.borrow();
-    render(target.deref(), node, context.clone());
-}
-
-fn render<'a, Controller, T: Component<Controller>>(target: &HtmlNode<'a>, node: Node, context: Rc<RefCell<Context<'a, Controller, T>>>) {
+fn render<'a, T: 'a + Component>(
+        document: Rc<RefCell<Document<'a>>>,
+        target: &HtmlNode<'a>,
+        node: Node,
+        root: Rc<RefCell<HtmlNode<'a>>>,
+        component: Rc<RefCell<T>>) {
     match node {
         Node::Text(content) => {
             target.html_set(content.as_slice());
         },
         Node::Element(element) => {
-            let ctx = context.borrow();
-            let doc = ctx.doc.borrow();
-            let this = doc.element_create(element.tag.as_slice()).unwrap();
+            let this = document.borrow().element_create(element.tag.as_slice()).unwrap();
             for (name, value) in element.attributes {
                 match value {
                     AttributeValue::Text(text) => {
@@ -46,17 +35,19 @@ fn render<'a, Controller, T: Component<Controller>>(target: &HtmlNode<'a>, node:
                     },
                     AttributeValue::EventHandler(mut f) => {
                         this.on("input", {
-                            let ctx = context.clone();
+                            let document = document.clone();
+                            let root = root.clone();
+                            let component = component.clone();
                             move |mut e| {
                                 f(&mut e);
-                                // redraw(ctx);
+                                mount(document.clone(), root.clone(), component.clone());
                             }
                         });
                     },
                 }
             }
             for child in element.children {
-                render(&this, child, context.clone());
+                render(document.clone(), &this, child, root.clone(), component.clone());
             }
             target.append(&this);
         }
