@@ -47,8 +47,8 @@ impl Component<MainController> for Main {
 fn main() {
     let main_component = Main;
 
-    let document = webplatform::init();
-    let body = document.element_query("body").unwrap();
-    mithril::mount(&document, &body, main_component);
+    let document = Rc::new(RefCell::new(webplatform::init()));
+    let body = Rc::new(RefCell::new(document.borrow().element_query("body").unwrap()));
+    mithril::mount(document.clone(), body.clone(), main_component);
     webplatform::spin();
 }
